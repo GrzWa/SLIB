@@ -1,9 +1,10 @@
 import { Layout } from '@/components/Layout';
+import { HeroSection } from './components/Sections';
 
 export function Home() {
   return (
     <Layout>
-      <div>Inside Home</div>
+      <HeroSection />
     </Layout>
   );
 }

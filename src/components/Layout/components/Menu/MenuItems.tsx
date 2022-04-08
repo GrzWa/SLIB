@@ -1,17 +1,19 @@
+import { Col, Container, Row } from 'react-bootstrap';
 import { MenuItem } from './MenuItem';
 
 export const MenuItems = ({ data }: any) => {
-  console.log(data);
+  // console.log(data);
   return (
     <>
-      <div>Menu Items:</div>
-      {data?.map(({ item, index }: any) => (
-        <div key={`${index}${item}2`}>
-          {/* <MenuItem key={index} item={item} /> */}
-          Here
-          {item}
-        </div>
-      ))}
+      <Container>
+        <Row style={{ margin: `0` }}>
+          {data?.map((props: any) => (
+            <Col key={props} lg={1} style={{ minWidth: `6vw`, padding: `0` }}>
+              <MenuItem key={props} item={props} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
   );
 };
