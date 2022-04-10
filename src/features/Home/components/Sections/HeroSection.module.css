@@ -1,6 +1,6 @@
 .custom-btn {
   width: 140px;
-  height: 40px;
+  height: 50px;
   font-size: 0.8em;
   font-weight: 600;
   color: black;
@@ -8,5 +8,44 @@
 
 .ylw {
   background-color: #FFDC4E;
+}
+
+.murray {
+  position: absolute;
+  right: 0;
+  top: 4em;
+  width: 45em;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.hero-card {
+  width: 30em;
+  margin-top: 16em;
+  margin-bottom: 22em;
+  color: black;
+}
+
+.hero-card h5 {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.hero-card h6 {
+  font-weight: 200;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-card p {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.checkered {
+  position: absolute;
+  left: 0;
+  top: 60.5em;
+  z-index: -10;
 }
 /*# sourceMappingURL=HeroSection.module.css.map */

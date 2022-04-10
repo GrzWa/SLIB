@@ -1,17 +1,24 @@
+import Image from 'next/image';
 import styles from './HeroSection.module.css';
+import Murray_Rothbard from '../../../../../public/images/backgrounds/Murray_Rothbard.png';
+import checkered from '../../../../../public/images/backgrounds/checkered.svg';
+
 export const HeroSection = () => {
   return (
     <>
-      <div
-        className="card border-0 bg-transparent"
-        style={{ width: `22rem`, marginTop: `12em` }}
-      >
+      <div className={styles.murray}>
+        <Image src={Murray_Rothbard} alt="Murray Rothbard" />
+      </div>
+      <div className={styles.checkered}>
+        <Image src={checkered} alt="background" />
+      </div>
+      <div className={`card border-0 bg-transparent ${styles[`hero-card`]}`}>
         <div className="card-body">
-          <h5 className="card-title fw-bold fs-2">Lorem ipsum</h5>
-          <h6 className="card-subtitle mb-2 fs-2 fw-light">
+          <h5 className="card-title">Lorem ipsum</h5>
+          <h6 className="card-subtitle">
             iusto odio dignissimos ducimus qui blanditiis
           </h6>
-          <p className="card-text fw-lighter">
+          <p className="card-text">
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
             impedit quo minus.
           </p>

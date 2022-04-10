@@ -1,5 +1,5 @@
 export const Main = ({ children }: any) => (
   <>
-    <div style={{ width: `85vw`, margin: `0 auto` }}>{children}</div>
+    <div style={{ width: `78vw`, margin: `0 auto` }}>{children}</div>
   </>
 );

@@ -1,10 +1,11 @@
 import { Layout } from '@/components/Layout';
-import { HeroSection } from './components/Sections';
+import { HeroSection, NewsSection } from './components/Sections';
 
 export function Home() {
   return (
     <Layout>
       <HeroSection />
+      <NewsSection />
     </Layout>
   );
 }

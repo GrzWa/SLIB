@@ -23,7 +23,7 @@ export const Header = () => {
       <div className={styles.bg}>
         <Image src={mainbg} alt={`Tło`} layout="responsive" />
       </div>
-      <Container style={{ maxWidth: `85vw` }}>
+      <Container style={{ maxWidth: `78vw` }}>
         <Row style={{ alignItems: `center` }}>
           <Col lg={2}>
             <LogoSL />
