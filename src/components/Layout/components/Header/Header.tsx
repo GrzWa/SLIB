@@ -25,10 +25,10 @@ export const Header = () => {
       </div>
       <Container style={{ maxWidth: `78vw` }}>
         <Row style={{ alignItems: `center` }}>
-          <Col lg={2}>
+          <Col lg={2} style={{ padding: `0` }}>
             <LogoSL />
           </Col>
-          <Col lg={8}>
+          <Col lg={8} style={{ margin: `0`, padding: `0` }}>
             <Menu data={data} />
           </Col>
           <Col lg={2}>*Ikona i koń*</Col>

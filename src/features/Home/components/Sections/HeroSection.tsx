@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './HeroSection.module.css';
 import Murray_Rothbard from '../../../../../public/images/backgrounds/Murray_Rothbard.png';
 import checkered from '../../../../../public/images/backgrounds/checkered.svg';
+import { Button } from '../../../../components/Button/';
 
 export const HeroSection = () => {
   return (
@@ -22,27 +23,27 @@ export const HeroSection = () => {
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
             impedit quo minus.
           </p>
-          <button
+          {/* <button
             type="button"
-            className={`btn rounded-pill me-4 ${styles[`custom-btn`]} ${
+            className={`btn rounded-pill ${styles[`custom-btn`]} ${
               styles[`ylw`]
             }`}
           >
-            <a href="#" className="card-link text-dark text-decoration-none">
-              Consequatur
-            </a>
-          </button>
-          <button
+            <a href="#" className="card-link text-dark text-decoration-none"> */}
+          <Button background={`#FFDC4e`}>Consequatur</Button>
+          {/* </a>
+          </button> */}
+          {/* <button
             type="button"
             className={`btn btn-light btn-outline-dark rounded-pill ${
               styles[`custom-btn`]
             }`}
             style={{ width: `140px` }}
           >
-            <a href="#" className="card-link text-dark text-decoration-none">
-              Similique sunt
-            </a>
-          </button>
+            <a href="#" className="card-link text-dark text-decoration-none"> */}
+          <Button outline="black">Similique sunt</Button>
+          {/* </a>
+          </button> */}
         </div>
       </div>
     </>

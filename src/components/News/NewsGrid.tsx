@@ -17,11 +17,9 @@ export const NewsGrid = () => {
             style={{ marginRight: `0px`, paddingRight: `0px` }}
           >
             <div className="card border-0">
-              <div className="card-body">
-                <h5 className="card-title fw-bold fs-5">
-                  Hans-Hermann Hoppe o lockdownach
-                </h5>
-                <p className="card-text fw-lighter">
+              <div className={`card-body ${styles.card}`}>
+                <h5 className="card-title">Hans-Hermann Hoppe o lockdownach</h5>
+                <p className="card-text">
                   W dobie z jednej strony coraz powszechniejszego buntu
                   przeciwko rządowym lockdownom powodującym ekonomiczną ruinę
                   tysięcy przedsiębiorstw, z drugiej zaś – wciąż wysokiej
@@ -30,45 +28,41 @@ export const NewsGrid = () => {
                   granic w poświęcaniu przez rząd majątków i wolności obywateli
                   w imię walki z...
                 </p>
-                <button
-                  type="button"
-                  className={`btn btn-outline-light rounded-pill me-4 ${
-                    styles[`custom-btn2`]
-                  }`}
-                >
-                  <a
+                <div className={styles.buttons}>
+                  <button
+                    type="button"
+                    className={`btn ${styles[`custom-btn2`]}`}
+                  >
+                    {/* <a
                     href="#"
                     className="card-link text-dark text-decoration-none"
-                  >
+                  > */}
                     Informacje prasowe
-                  </a>
-                </button>
-                <button
-                  type="button"
-                  className={`btn btn-outline-light rounded-pill ${
-                    styles[`custom-btn2`]
-                  }`}
-                >
-                  <a
+                    {/* </a> */}
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn ${styles[`custom-btn2`]}`}
+                  >
+                    {/* <a
                     href="#"
                     className="card-link text-dark text-decoration-none"
-                  >
+                  > */}
                     COVID-19
-                  </a>
-                </button>
-                <button
-                  type="button"
-                  className={`btn btn-outline-light rounded-pill ${
-                    styles[`custom-btn2`]
-                  }`}
-                >
-                  <a
+                    {/* </a> */}
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn ${styles[`custom-btn2`]}`}
+                  >
+                    {/* <a
                     href="#"
                     className="card-link text-dark text-decoration-none"
-                  >
+                  > */}
                     Polski
-                  </a>
-                </button>
+                    {/* </a> */}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -142,16 +136,7 @@ export const NewsGrid = () => {
           <div className="col-3 pe-1 ps-1">
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img4} className="card-img-top" alt="img4" />
-              <div className="card-body">
-                {/* <p className="card-text">
-                      <small className="text-muted">27 stycznia 2021</small>
-                    </p>
-                    <h5 className="card-title">
-                    </h5>
-                    <a href="#" className="btn d-flex justify-content-md-end">
-                      <Image src={czytaj} alt="Idź" />
-                    </a> */}
-              </div>
+              <div className="card-body"></div>
             </div>
           </div>
         </div>

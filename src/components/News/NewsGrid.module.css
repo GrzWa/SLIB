@@ -5,4 +5,35 @@
   font-weight: 600;
   color: black;
 }
+
+.custom-btn2 {
+  height: 25px;
+  font-size: 0.6em;
+  font-weight: 400;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 2em;
+  margin-right: 2em;
+}
+
+.card {
+  padding: 4em;
+  height: 100%;
+}
+
+.card h5 {
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 0.5em 0;
+}
+
+.card p {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+
+.card .buttons {
+  position: absolute;
+  bottom: 1em;
+}
 /*# sourceMappingURL=NewsGrid.module.css.map */
