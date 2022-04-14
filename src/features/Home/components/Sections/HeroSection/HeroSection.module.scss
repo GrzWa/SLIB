@@ -23,7 +23,7 @@
   .hero-card {
       width: 30em;
       margin-top: 16em;
-      margin-bottom: 22em;
+      margin-bottom: 16em;
       color: black;
       h5 {
         font-weight: bold;
@@ -42,9 +42,4 @@
       }
   }
 
-  .checkered {
-    position: absolute;
-    left: 0;
-    top: 60.5em;
-    z-index: -10;
-  }
+  

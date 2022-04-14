@@ -5,75 +5,62 @@ import img2 from '../../../public/images/news/img2.png';
 import img3 from '../../../public/images/news/img3.png';
 import img4 from '../../../public/images/news/img4.png';
 import czytaj from '../../../public/images/news/czytaj.png';
+import calendar from '../../../public/images/logo/calendar.svg';
+import person_icon from '../../../public/images/logo/person_icon.svg';
 import Image from 'next/image';
+import { Col, Row } from 'react-bootstrap';
 
 export const NewsGrid = () => {
   return (
     <>
       <div className="container">
-        <div className="row justify-content-center">
-          <div
-            className="col-6"
-            style={{ marginRight: `0px`, paddingRight: `0px` }}
-          >
-            <div className="card border-0">
-              <div className={`card-body ${styles.card}`}>
-                <h5 className="card-title">Hans-Hermann Hoppe o lockdownach</h5>
-                <p className="card-text">
-                  W dobie z jednej strony coraz powszechniejszego buntu
-                  przeciwko rządowym lockdownom powodującym ekonomiczną ruinę
-                  tysięcy przedsiębiorstw, z drugiej zaś – wciąż wysokiej
-                  dziennej liczby zakażeń i zgonów wywołanych koronawirusem
-                  SARS-CoV-2, na nowo rozgorzała debata na temat dopuszczalnych
-                  granic w poświęcaniu przez rząd majątków i wolności obywateli
-                  w imię walki z...
-                </p>
-                <div className={styles.buttons}>
-                  <button
-                    type="button"
-                    className={`btn ${styles[`custom-btn2`]}`}
-                  >
-                    {/* <a
-                    href="#"
-                    className="card-link text-dark text-decoration-none"
-                  > */}
-                    Informacje prasowe
-                    {/* </a> */}
-                  </button>
-                  <button
-                    type="button"
-                    className={`btn ${styles[`custom-btn2`]}`}
-                  >
-                    {/* <a
-                    href="#"
-                    className="card-link text-dark text-decoration-none"
-                  > */}
-                    COVID-19
-                    {/* </a> */}
-                  </button>
-                  <button
-                    type="button"
-                    className={`btn ${styles[`custom-btn2`]}`}
-                  >
-                    {/* <a
-                    href="#"
-                    className="card-link text-dark text-decoration-none"
-                  > */}
-                    Polski
-                    {/* </a> */}
-                  </button>
-                </div>
+        <Row className={styles.center}>
+          <Col lg={6} md={12} className={styles[`col-big`]}>
+            <div className={styles.card}>
+              <p className={styles.data}>
+                <Image src={calendar} alt="kalendarz" />
+                27 stycznia <Image src={person_icon} alt="osoba" />
+                2021 Konto Administracyjne
+              </p>
+              <div className={styles.title}>
+                Hans-Hermann Hoppe o lockdownach
+              </div>
+              <p className={styles.text}>
+                W dobie z jednej strony coraz powszechniejszego buntu przeciwko
+                rządowym lockdownom powodującym ekonomiczną ruinę tysięcy
+                przedsiębiorstw, z drugiej zaś – wciąż wysokiej dziennej liczby
+                zakażeń i zgonów wywołanych koronawirusem SARS-CoV-2, na nowo
+                rozgorzała debata na temat dopuszczalnych granic w poświęcaniu
+                przez rząd majątków i wolności obywateli w imię walki z...
+              </p>
+              <div className={styles.buttons}>
+                <button
+                  type="button"
+                  className={`btn ${styles[`custom-btn2`]}`}
+                >
+                  Informacje prasowe
+                </button>
+                <button
+                  type="button"
+                  className={`btn ${styles[`custom-btn2`]}`}
+                >
+                  COVID-19
+                </button>
+                <button
+                  type="button"
+                  className={`btn ${styles[`custom-btn2`]}`}
+                >
+                  Polski
+                </button>
               </div>
             </div>
-          </div>
-          <div
-            className="col-6"
-            style={{ marginLeft: `0px`, paddingLeft: `0px` }}
-          >
+          </Col>
+          <Col lg={6} md={12} className={styles[`col-big`]}>
             <Image src={hoppe} alt="Hoppe o lockdownach" />
-          </div>
-        </div>
-        <div className="row justify-content-center">
+          </Col>
+        </Row>
+        <Row>
+          {/* <div className="row justify-content-center"> */}
           <div className="col-3 pe-1 ps-1">
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img1} className="card-img-top" alt="img1" />
@@ -85,12 +72,7 @@ export const NewsGrid = () => {
                   Brad Polumbo – Tulsi Gabbard i Thomas Massie w obronie 4.
                   poprawki
                 </h5>
-                <a
-                  href="#"
-                  className="btn d-flex justify-content-md-end position-absolute bottom-0 end-0 pb-4 pe-4"
-                >
-                  <Image src={czytaj} alt="Idź" />
-                </a>
+                <Image src={czytaj} alt="Idź" />
               </div>
             </div>
           </div>
@@ -104,12 +86,7 @@ export const NewsGrid = () => {
                 <h5 className="card-title">
                   Łukasz Frontczak – Co robić, gdy znikniemy z Facebooka?
                 </h5>
-                <a
-                  href="#"
-                  className="btn d-flex justify-content-md-end position-absolute bottom-0 end-0 pb-4 pe-4"
-                >
-                  <Image src={czytaj} alt="Idź" />
-                </a>
+                <Image src={czytaj} alt="Idź" />
               </div>
             </div>
           </div>
@@ -139,7 +116,8 @@ export const NewsGrid = () => {
               <div className="card-body"></div>
             </div>
           </div>
-        </div>
+          {/* </div> */}
+        </Row>
       </div>
     </>
   );

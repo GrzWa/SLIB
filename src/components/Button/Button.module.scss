@@ -1,16 +1,22 @@
-.custom-btn {
-    width: 140px;
-    height: 50px;
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 2em;
+    padding: 0.8em 2em;
     font-size: 0.8em;
-    font-weight: 600;
-    color: white;
-    margin-right: 2em;
     background-color: transparent;
-    outline: 1px solid white;
-  }
+    
+    &--yellow {
+        background-color: #FFDC4E;
+    }
 
-  .ylw {
-      background-color: #FFDC4E;
-      outline: none;
-      color: black;
-  }
+    &--white {
+        border: 1px solid white;
+        color: white;
+    }
+
+    &--black {
+        border: 1px solid black;
+        color: black;
+    }
+}

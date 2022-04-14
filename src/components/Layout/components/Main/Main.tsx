@@ -1,5 +1,6 @@
+import styles from './Main.module.css';
 export const Main = ({ children }: any) => (
   <>
-    <div style={{ width: `78vw`, margin: `0 auto` }}>{children}</div>
+    <div className={styles.main}>{children}</div>
   </>
 );

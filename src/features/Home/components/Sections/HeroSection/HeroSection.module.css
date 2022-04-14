@@ -23,7 +23,7 @@
 .hero-card {
   width: 30em;
   margin-top: 16em;
-  margin-bottom: 22em;
+  margin-bottom: 16em;
   color: black;
 }
 
@@ -41,12 +41,5 @@
 .hero-card p {
   font-weight: 200;
   font-style: italic;
-}
-
-.checkered {
-  position: absolute;
-  left: 0;
-  top: 60.5em;
-  z-index: -10;
 }
 /*# sourceMappingURL=HeroSection.module.css.map */

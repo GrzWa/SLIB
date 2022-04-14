@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from './HeroSection.module.css';
-import Murray_Rothbard from '../../../../../public/images/backgrounds/Murray_Rothbard.png';
-import checkered from '../../../../../public/images/backgrounds/checkered.svg';
-import { Button } from '../../../../components/Button/';
+import Murray_Rothbard from '../../../../../../public/images/backgrounds/Murray_Rothbard.png';
+// import checkered from '../../../../../public/images/backgrounds/checkered.svg';
+import { Button } from '../../../../../components/Button/';
 
 export const HeroSection = () => {
   return (
@@ -10,9 +10,9 @@ export const HeroSection = () => {
       <div className={styles.murray}>
         <Image src={Murray_Rothbard} alt="Murray Rothbard" />
       </div>
-      <div className={styles.checkered}>
+      {/* <div className={styles.checkered}>
         <Image src={checkered} alt="background" />
-      </div>
+      </div> */}
       <div className={`card border-0 bg-transparent ${styles[`hero-card`]}`}>
         <div className="card-body">
           <h5 className="card-title">Lorem ipsum</h5>
@@ -30,7 +30,7 @@ export const HeroSection = () => {
             }`}
           >
             <a href="#" className="card-link text-dark text-decoration-none"> */}
-          <Button background={`#FFDC4e`}>Consequatur</Button>
+          <Button variant="yellow">Consequatur</Button>
           {/* </a>
           </button> */}
           {/* <button
@@ -41,7 +41,7 @@ export const HeroSection = () => {
             style={{ width: `140px` }}
           >
             <a href="#" className="card-link text-dark text-decoration-none"> */}
-          <Button outline="black">Similique sunt</Button>
+          <Button variant="black">Similique sunt</Button>
           {/* </a>
           </button> */}
         </div>

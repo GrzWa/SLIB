@@ -1,0 +1,141 @@
+.container {
+    position: relative;
+    height: 18em;
+    margin: 3em 0;
+
+    .navy {
+        position: absolute;
+        left: 0;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+        background-color: #272449;
+        z-index: -10;
+
+        .content {
+            position: absolute;
+            z-index: 100;
+            padding: 2.5em;
+            color: white;
+            width: 70%;
+        .title {
+            font-size: 2.5em;
+            padding-bottom: 0.5em;
+        }
+        .text {
+            font-size: 0.9em;
+            font-weight: 300;
+            padding-bottom: 4em;
+        }
+    }
+    .buttons {
+        position: absolute;
+        bottom: 2em;
+        left: 2em;
+        .button {
+            margin-right: 2em;
+        }
+    }
+    }
+    .yellow {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 110%;
+        width: 30%;
+        background-color: #FFDC4e;
+        .skarbonka {
+            position: absolute;
+            bottom: 1em;
+            margin-top: 2em;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            .image {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .container {
+        height: 36em;
+        .navy {
+            position: relative;
+            height: 50%;
+            .content {
+                width: 100%;
+                .title {
+                    font-size: 1.5em;
+                }
+                // .text {
+                //     font-size: 0.7em;
+                // }
+            }
+            .buttons {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin-bottom: 1.5em;
+
+            }
+        }
+        .yellow {
+            position: relative;
+            height: 50%;
+            width: 100%
+        }
+    }
+}
+
+
+
+
+
+// .images {
+//     position: relative;
+//     margin: 4em 0;
+//     padding-bottom: 5em;
+//     height: 23em;
+// }
+// .navy {
+//     position: absolute;
+//     top: 1.3em;
+// }
+
+// .yellow {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     max-width: 45%;
+// }
+
+// .skarbonka {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     padding-bottom: 1em;
+//     padding-right: 8em;
+//     width: 30%;
+// }
+
+
+// .content {
+//     position: absolute;
+//     z-index: 100;
+//     padding: 2.5em;
+//     color: white;
+// .title {
+//     font-size: 2.5em;
+//     padding-bottom: 0.5em;
+// }
+// .text {
+//     font-size: 0.9em;
+//     font-weight: 300;
+//     padding-bottom: 4em;
+// }
+// }

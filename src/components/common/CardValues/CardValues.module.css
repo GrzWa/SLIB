@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  padding: 2em 1.5em;
+}
+
+.container .row {
+  height: 100%;
+}
+
+.container .row .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row .right {
+  padding: 0 1em;
+}
+
+.container .row .right .title {
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.container .row .right .text {
+  font-weight: lighter;
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=CardValues.module.css.map */

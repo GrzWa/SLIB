@@ -1,0 +1,11 @@
+.main {
+  width: 78vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=Main.module.css.map */

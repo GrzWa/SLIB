@@ -1,3 +1,49 @@
+.center {
+  justify-content: center;
+  font-size: 0.8em;
+  .col-big {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    .card {
+      position: relative;
+      padding: 3.5em;
+      background-color: white;
+      height: 100%;
+
+      .data {
+        
+        color: #ABABAB;
+        margin: 0;
+        padding-top: 1em;
+      }
+
+      .title {
+        font-size: 1.5em;
+        font-weight: 600;
+        padding: 1em 0;
+      }
+
+      .text {
+        // background-color: bisque;
+        max-height: 35%;
+        overflow: hidden;
+        line-height: 200%;
+      }
+
+      .buttons {
+        position: absolute;
+        margin: auto 0;
+        padding: auto 0;
+        bottom: 5em;
+      }
+    }
+  }
+}
+
+
 .custom-btn {
     width: 140px;
     height: 40px;
@@ -16,24 +62,29 @@
     margin-right: 2em;
   }
 
-  .card {
-      padding: 4em;
-      height: 100%;
+  // .card {
+  //     padding: 4em;
+  //     height: 100%;
 
-      h5 {
-          font-weight: bold;
-          font-size: 1.4em;
-          padding: 0.5em 0;
-      }
+  //     h5 {
+  //         font-weight: bold;
+  //         font-size: 1.4em;
+  //         padding: 0.5em 0;
+  //     }
 
-      p{
-        font-size: 0.7em;
-          font-weight: 300;
-      }
+  //     p{
+  //       font-size: 0.7em;
+  //         font-weight: 300;
+  //     }
 
-      .buttons {
-        position: absolute;
-        bottom: 1em;
-      }
+  //     .buttons {
+  //       position: absolute;
+  //       bottom: 1em;
+  //     }
 
-  }
+  // }
+
+
+//   @media only screen and (max-width: 768px) {
+   
+// }

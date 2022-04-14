@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,IAAI,EAAE,CAAC;EACP,GAAG,EAAE,MAAM;EACX,OAAO,EAAE,GAAG;CACb",
+    "sources": [
+        "NewsSection.module.scss"
+    ],
+    "names": [],
+    "file": "NewsSection.module.css"
+}

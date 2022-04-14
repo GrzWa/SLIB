@@ -1,26 +1,22 @@
-import styles from './Button.module.css';
-export const Button = ({
-  children,
-  text = `black`,
-  background = `transparent`,
-  outline = `transparent`,
-}: any) => {
-  const classes = `btn rounded-pill ${styles[`custom-btn`]}`;
+import styles from './Button.module.scss';
+import { FC } from 'react';
+import clsx from 'clsx';
 
-  // yellow
-  //   ? `btn rounded-pill ${styles[`custom-btn`]} ${styles[`ylw`]}`
-  //   : `btn btn-light btn-outline-dark rounded-pill ${styles[`custom-btn`]}`;
+interface Props {
+  variant: 'yellow' | 'white' | 'black';
+}
+
+export const Button: FC<Props> = ({ children, variant = `yellow` }) => {
+  const cls = clsx([
+    styles.button,
+    variant === `yellow` && styles[`button--yellow`],
+    variant === `white` && styles[`button--white`],
+    variant === `black` && styles[`button--black`],
+  ]);
+
   return (
     <>
-      <button
-        type="button"
-        className={classes}
-        style={{
-          color: `${text}`,
-          background: `${background}`,
-          outline: `1px solid ${outline}`,
-        }}
-      >
+      <button type="button" className={cls}>
         {children}
       </button>
     </>
