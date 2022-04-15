@@ -1,5 +1,6 @@
 .section {
     position: relative;
+    // background-color: rgba(161, 36, 36, 0.195);
     .background {
         position: absolute;
         width: 100vw;
@@ -11,23 +12,55 @@
         z-index: -100;
     }
     .container {
+        display: flex;
         max-width: 100%;
         margin: 0;
         padding: 0;
+
+
         .row-lg {
-            height: 38em;
+            height: 36em;
+            max-width: 120%;
+            // background-color: rgba(0, 255, 51, 0.293);
+
         .col-left {
             margin: 0;
-            padding: 0;
+            padding: 1.5em 0.5em 1.5em 0;
             height: 100%;
-            width: 22em;
+            max-width: 22em;
+
             .card {
                 background-color: #FFDC4E;
                 height: 100%;
-                margin: 0.5em 1em;
+                // margin: 0.5em 1em;
 
                 .card-img {
                     width: 100%;
+                }
+
+                .card-content {
+                    position: relative;
+                    height: 25%;
+                    
+                    .card-text {
+                        padding: 1em;
+                        max-width: 100%;
+                        position: absolute;
+                        text-align: center;
+                        // align-items: center;
+                        // align-content: center;
+                        margin: auto;
+                        font-weight: 300;
+                        font-style: italic;
+                        font-size: 0.8em;
+                    }
+
+                    .card-name {
+                        position: absolute;
+                        bottom: 1em;
+                        right: 1em;
+                        font-weight: 700;
+                    }
                 }
             }
         }
@@ -35,10 +68,13 @@
 
             .col-right {
                 margin: 0;
-                padding: 0;
+                padding: 1em;
                 height: 100%;
                 .row-sm {
                     height: 50%;
+                    max-width: 110%;
+                    // background-color: rgba(0, 13, 255, 0.331);
+
                     .col {
                         height: 100%;
                         padding: 0.5em;
@@ -48,4 +84,29 @@
 
     }
 }
+}
+
+@media only screen and (max-width: 1400px) {
+    .section {
+        .container {
+            .row-lg {
+                height: 76em;
+                // background-color: rgba(0, 255, 42, 0.19);
+                .col-left {
+                    height: 38em;
+                }
+                .col-right {
+                    height: 25%;
+                    .row-sm {
+                        height: 200%;
+                        .col {
+                            height: 50%;
+
+                        }
+                        }
+                    }
+                }
+
+        }
+    }
 }

@@ -9,7 +9,7 @@ export const CardValues = (props) => {
         <Col sm={3} className={styles.image}>
           <Image src={props.content.img} alt="obrazek" />
         </Col>
-        <Col sm={9}>
+        <Col sm={9} className={styles.col}>
           <div className={styles.right}>
             <div className={styles.title}>{props.content.title}</div>
             <div className={styles.text}>{props.content.text}</div>

@@ -41,7 +41,7 @@ export const OurValuesSection = () => {
       <Container className={styles.container}>
         <Row className={styles[`row-lg`]}>
           {/* --------------------------------------------------------- */}
-          <Col xl={6} xxl={3} className={styles[`col-left`]}>
+          <Col sm={12} md={4} xl={4} xxl={3} className={styles[`col-left`]}>
             <div className={styles.card}>
               <Image
                 src={obrazek1}
@@ -49,13 +49,17 @@ export const OurValuesSection = () => {
                 className={styles[`card-img`]}
               />
               <div className={styles[`card-content`]}>
-                Helloowd asd adsada awd aw
+                <div className={styles[`card-text`]}>
+                  Tylko wolność może zapewnić człowiekowi dostatek, spełnienie i
+                  szczęście.
+                </div>
+                <div className={styles[`card-name`]}>Murray N. Rothbard</div>
               </div>
             </div>
           </Col>
 
           {/* --------------------------------------------------------- */}
-          <Col xl={6} xxl={9} className={styles[`col-right`]}>
+          <Col sm={12} md={8} xl={8} xxl={9} className={styles[`col-right`]}>
             <Row className={styles[`row-sm`]}>
               <Col xl={12} xxl={6} className={styles.col}>
                 <CardValues content={card1} />
@@ -76,5 +80,48 @@ export const OurValuesSection = () => {
         </Row>
       </Container>
     </div>
+
+    // <div className={styles.section}>
+    //   <div className={styles.background} />
+    //   <Title title={title} alignment={alignment} />
+
+    //   <Container className={styles.container}>
+    //     <Row className={styles[`row-lg`]}>
+    //       {/* --------------------------------------------------------- */}
+    //       <Col xl={6} xxl={3} className={styles[`col-left`]}>
+    //         <div className={styles.card}>
+    //           <Image
+    //             src={obrazek1}
+    //             alt="Image"
+    //             className={styles[`card-img`]}
+    //           />
+    //           <div className={styles[`card-content`]}>
+    //             Helloowd asd adsada awd aw
+    //           </div>
+    //         </div>
+    //       </Col>
+
+    //       {/* --------------------------------------------------------- */}
+    //       <Col xl={6} xxl={9} className={styles[`col-right`]}>
+    //         <Row className={styles[`row-sm`]}>
+    //           <Col xl={12} xxl={6} className={styles.col}>
+    //             <CardValues content={card1} />
+    //           </Col>
+    //           <Col xl={12} xxl={6} className={styles.col}>
+    //             <CardValues content={card2} />
+    //           </Col>
+    //         </Row>
+    //         <Row className={styles[`row-sm`]}>
+    //           <Col xl={12} xxl={6} className={styles.col}>
+    //             <CardValues content={card3} />
+    //           </Col>
+    //           <Col xl={12} xxl={6} className={styles.col}>
+    //             <CardValues content={card4} />
+    //           </Col>
+    //         </Row>
+    //       </Col>
+    //     </Row>
+    //   </Container>
+    // </div>
   );
 };

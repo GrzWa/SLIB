@@ -5,6 +5,7 @@ import {
   OurValuesSection,
   SupportUsSection,
 } from './components/Sections';
+import { EventsSection } from './components/Sections/EventsSection';
 
 export function Home() {
   return (
@@ -14,6 +15,7 @@ export function Home() {
         <NewsSection />
         <SupportUsSection />
         <OurValuesSection />
+        <EventsSection />
       </Layout>
     </>
   );
