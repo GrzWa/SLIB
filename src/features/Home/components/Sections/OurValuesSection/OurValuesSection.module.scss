@@ -1,6 +1,6 @@
 .section {
     position: relative;
-    // background-color: rgba(161, 36, 36, 0.195);
+    background-color: rgba(161, 36, 36, 0.195);
     .background {
         position: absolute;
         width: 100vw;
@@ -65,15 +65,15 @@
             }
         }
 
-
             .col-right {
                 margin: 0;
                 padding: 1em;
                 height: 100%;
+                background-color: red;
                 .row-sm {
                     height: 50%;
                     max-width: 110%;
-                    // background-color: rgba(0, 13, 255, 0.331);
+                    background-color: rgba(0, 13, 255, 0.331);
 
                     .col {
                         height: 100%;
@@ -90,15 +90,15 @@
     .section {
         .container {
             .row-lg {
-                height: 76em;
+                height: 100%;
                 // background-color: rgba(0, 255, 42, 0.19);
                 .col-left {
                     height: 38em;
                 }
                 .col-right {
-                    height: 25%;
+                    // height: 100%;
                     .row-sm {
-                        height: 200%;
+                        height: 50%;
                         .col {
                             height: 50%;
 

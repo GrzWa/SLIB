@@ -20,13 +20,13 @@ export const EventsGrid = () => {
                 <EventsCard image={stock1} text={text1} />
             </Col>
             <Col md={6} lg={4} xl={3} className={`${styles.col} d-none d-md-inline`}>
-            <EventsCard image={stock2} text={text1} />
+            <EventsCard image={stock2} text={text2} />
             </Col>
             <Col lg={4} xl={3} className={`${styles.col} d-none d-lg-inline`}>
-            <EventsCard image={stock3} text={text1} />
+            <EventsCard image={stock3} text={text3} />
             </Col>
             <Col xl={3} className={`${styles.col} ${styles.forth} d-none d-xl-inline`}>
-            <EventsCard image={stock4} text={text1} />
+            <EventsCard image={stock4} text={text4} />
             </Col>
         </Row>
     </Container>
