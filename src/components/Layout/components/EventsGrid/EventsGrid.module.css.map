@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "EventsGrid.module.scss"
+    ],
+    "names": [],
+    "file": "EventsGrid.module.css"
+}

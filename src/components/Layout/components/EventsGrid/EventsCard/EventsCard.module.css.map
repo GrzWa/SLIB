@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,IAAI;CAMd;;AATD,AAII,UAJM,CAIN,IAAI,CAAC;EACD,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,CAAC;CACb",
+    "sources": [
+        "EventsCard.module.scss"
+    ],
+    "names": [],
+    "file": "EventsCard.module.css"
+}
