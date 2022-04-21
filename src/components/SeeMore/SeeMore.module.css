@@ -1,0 +1,27 @@
+.col-more {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.col-more--light {
+  background-color: #FAFAFA;
+}
+
+.col-more--dark {
+  background-color: #F3f3f3;
+}
+
+.col-more--yellow {
+  background-color: #ffdc4e;
+}
+
+.col-more .more {
+  background-color: #FFDC4e;
+  height: 6em;
+  font-weight: 500;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=SeeMore.module.css.map */

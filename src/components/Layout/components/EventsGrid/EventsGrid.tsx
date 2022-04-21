@@ -5,6 +5,7 @@ import stock2 from '@/public/images/img/stock2.png';
 import stock3 from '@/public/images/img/stock3.png';
 import stock4 from '@/public/images/img/stock4.png';
 import { EventsCard } from './EventsCard';
+import { SeeMore } from '@/components/SeeMore';
 
 export const EventsGrid = () => {
   const data1 = {
@@ -50,11 +51,7 @@ export const EventsGrid = () => {
             <EventsCard data={data4} variant="dark" />
           </Col>
         </Row>
-        <Row>
-          <Col sm={12} md={4} lg={3} xl={2} className={styles[`col-more`]}>
-            <div className={styles.more}>Zobacz więcej</div>
-          </Col>
-        </Row>
+        <SeeMore />
       </Container>
     </>
   );
