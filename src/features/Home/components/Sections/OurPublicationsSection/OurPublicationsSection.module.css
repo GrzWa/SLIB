@@ -1,4 +1,63 @@
+.row-left {
+  background-color: #EBEBEB;
+}
+
+.row-left .light {
+  background-color: #f4f4f4;
+}
+
+.row-left .yellow {
+  background-color: #FFDC4e;
+  height: 10%;
+  margin: 0;
+  padding: 0;
+}
+
+.row-left .yellow .content {
+  font-weight: 700;
+  padding: 2em;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.row-left .yellow .content .author {
+  font-weight: 300;
+  padding: 1em 0;
+}
+
 .row-left .col {
-  background-color: grey;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  height: 18em;
+}
+
+.row-left .col .img {
+  padding: 2em !important;
+}
+
+.col-right {
+  padding: 3em;
+}
+
+.col-right .content-right .title {
+  font-size: 2.5em;
+}
+
+.col-right .content-right .title span {
+  font-weight: 700;
+}
+
+.col-right .content-right .text {
+  padding-top: 2em;
+  line-height: 1.6em;
+  font-weight: 300;
+  padding-bottom: 3em;
+}
+
+.col-right .img {
+  height: 120%;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=OurPublicationsSection.module.css.map */
