@@ -14,7 +14,7 @@ export const OurPublicationsSection = () => {
   return (
     <>
       <Title title={`Nasze publikacje`} alignment={`center`} />
-      <Container>
+      <Container className={styles.container}>
         <Row>
           <Col lg={12} xl={6}>
             <Row className={styles[`row-left`]}>
@@ -40,12 +40,16 @@ export const OurPublicationsSection = () => {
               <Col sm={6} className={`${styles.col}`}>
                 <Image src={pub5} alt="obraz" className={styles.img} />
               </Col>
+              <div className={styles.plus}>
+                <div className={styles.center}>+</div>
+              </div>
             </Row>
           </Col>
 
           {/* ---------------------------------------------------------------------- */}
 
           <Col lg={12} xl={6} className={styles[`col-right`]}>
+            <div className={styles.background} />
             <Row>
               <div className={styles[`content-right`]}>
                 <div className={styles.title}>
