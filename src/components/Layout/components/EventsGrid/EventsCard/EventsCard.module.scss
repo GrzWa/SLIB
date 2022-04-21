@@ -1,12 +1,43 @@
 .container {
     padding: 0;
     margin: 0;
-    width: 18vw;
+    // width: 18vw;
     width: 100%;
+
     .col {
-        height: 10em;
-        background-color: #FFDC4e;
-        padding: 0;
+        min-height: 9em;
         // width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        
+        &--yellow {
+            background-color: #FFDC4e;
+        }
+
+        &--light {
+            background-color: #FAFAFA;
+        }
+
+        &--dark {
+            background-color: #F4F4F4;
+        }
+
+        .img {
+            width: 20%;
+        }
+
+        .date {
+            font-size: 0.8em;
+            font-weight: 400;
+            padding-top: 1em;
+        }
+        
+        .text {
+            padding-top: 1em;
+            margin: 0 2em;
+            font-size: 0.8em;
+            font-weight: 700;
+        }
     }
 }

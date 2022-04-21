@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAEI,SAFK,CAEL,IAAI,CAAC;EACD,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "OurPublicationsSection.module.scss"
+    ],
+    "names": [],
+    "file": "OurPublicationsSection.module.css"
+}

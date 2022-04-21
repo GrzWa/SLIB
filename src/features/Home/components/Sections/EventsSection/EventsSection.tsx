@@ -5,7 +5,7 @@ export const EventsSection = () => {
   return (
     <>
       <Title title="Nadchodzące wydarzenia" alignment="center" />
-    <EventsGrid />
+      <EventsGrid />
     </>
   );
 };

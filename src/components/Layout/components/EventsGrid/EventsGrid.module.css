@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=EventsGrid.module.css.map */
+.col-more {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.col-more .more {
+  background-color: #FFDC4e;
+  height: 6em;
+  font-weight: 500;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 1.2em;
+}
+
+.container {
+  padding: 0em;
+}
+
+.container .row {
+  width: 100%;
+  margin: 0;
+}
+
+.container .row .col {
+  padding: 0;
+}
+/*# sourceMappingURL=EventsGrid.module.css.map */

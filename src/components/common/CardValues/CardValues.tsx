@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { Col, Row } from 'react-bootstrap';
 import styles from './CardValues.module.css';
-export const CardValues = (props) => {
-  //   console.log(props.content);
+export const CardValues = (props: any) => {
+
   return (
     <div className={styles.container}>
       <Row className={styles.row}>

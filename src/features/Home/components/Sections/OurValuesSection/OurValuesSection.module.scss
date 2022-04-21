@@ -1,9 +1,10 @@
 .section {
     position: relative;
-    background-color: rgba(161, 36, 36, 0.195);
+    // background-color: rgba(161, 36, 36, 0.195);
     .background {
         position: absolute;
         width: 100vw;
+        overflow: hidden;
         height: 100%;
         margin: auto;
         background-color: #FAFAFA;
@@ -32,6 +33,7 @@
             .card {
                 background-color: #FFDC4E;
                 height: 100%;
+                max-width: 85%;
                 // margin: 0.5em 1em;
 
                 .card-img {
@@ -40,26 +42,24 @@
 
                 .card-content {
                     position: relative;
-                    height: 25%;
+                    // height: 50%;
                     
                     .card-text {
-                        padding: 1em;
-                        max-width: 100%;
-                        position: absolute;
-                        text-align: center;
-                        // align-items: center;
-                        // align-content: center;
+                        // position: absolute;
                         margin: auto;
+                        padding: 1em 2em;
                         font-weight: 300;
                         font-style: italic;
-                        font-size: 0.8em;
+                        font-size: 0.9em;
                     }
 
                     .card-name {
-                        position: absolute;
-                        bottom: 1em;
-                        right: 1em;
-                        font-weight: 700;
+                        // position: absolute;
+                        // bottom: 1em;
+                        // right: 1em;
+                        font-weight: 600;
+                        text-align: end;
+                        padding: 1em;
                     }
                 }
             }
@@ -69,11 +69,11 @@
                 margin: 0;
                 padding: 1em;
                 height: 100%;
-                background-color: red;
+                // background-color: red;
                 .row-sm {
                     height: 50%;
                     max-width: 110%;
-                    background-color: rgba(0, 13, 255, 0.331);
+                    // background-color: rgba(0, 13, 255, 0.331);
 
                     .col {
                         height: 100%;

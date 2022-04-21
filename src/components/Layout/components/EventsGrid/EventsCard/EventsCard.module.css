@@ -1,13 +1,42 @@
 .container {
   padding: 0;
   margin: 0;
-  width: 18vw;
   width: 100%;
 }
 
 .container .col {
-  height: 10em;
-  background-color: #FFDC4e;
+  min-height: 9em;
   padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.container .col--yellow {
+  background-color: #FFDC4e;
+}
+
+.container .col--light {
+  background-color: #FAFAFA;
+}
+
+.container .col--dark {
+  background-color: #F4F4F4;
+}
+
+.container .col .img {
+  width: 20%;
+}
+
+.container .col .date {
+  font-size: 0.8em;
+  font-weight: 400;
+  padding-top: 1em;
+}
+
+.container .col .text {
+  padding-top: 1em;
+  margin: 0 2em;
+  font-size: 0.8em;
+  font-weight: 700;
 }
 /*# sourceMappingURL=EventsCard.module.css.map */
