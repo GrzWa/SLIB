@@ -5,7 +5,7 @@ import styles from './SquareCard.module.css';
 export const SquareCard = (props: any) => {
   const variant = props.variant;
   const { num, title, text } = props.data;
-  console.log(variant);
+
   const cls = clsx([
     styles.container,
     variant === `yellow` && styles[`container--yellow`],

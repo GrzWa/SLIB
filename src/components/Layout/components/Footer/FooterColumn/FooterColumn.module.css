@@ -1,0 +1,14 @@
+.top {
+  font-weight: 600;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.col ul li {
+  line-height: 2em;
+}
+/*# sourceMappingURL=FooterColumn.module.css.map */
