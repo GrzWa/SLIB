@@ -1,0 +1,42 @@
+.container .col {
+  padding: 0;
+}
+
+.container .arrows {
+  position: relative;
+  background-color: red;
+  z-index: 1000;
+}
+
+.container .arrows .arrow-left {
+  position: absolute;
+  height: 3em;
+  width: 3rem;
+  top: -1.5em;
+  left: -1.5em;
+  background-color: #d0d0d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .arrows .arrow-right {
+  position: absolute;
+  height: 3em;
+  width: 3rem;
+  top: -1.5em;
+  right: -1.5em;
+  background-color: #ffdc4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=CatalogueGrid.module.css.map */

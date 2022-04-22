@@ -1,25 +1,21 @@
-.col-more {
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+.container .col-more {
   margin-left: auto;
   margin-right: 0;
+  padding: 0;
+  width: 10em;
+  height: 10em;
 }
 
-.col-more--light {
-  background-color: #FAFAFA;
-}
-
-.col-more--dark {
-  background-color: #F3f3f3;
-}
-
-.col-more--yellow {
-  background-color: #ffdc4e;
-}
-
-.col-more .more {
+.container .col-more .more {
   background-color: #FFDC4e;
-  height: 6em;
+  height: 100%;
   font-weight: 500;
-  padding: 1em;
+  padding: 1.5em;
   margin-left: auto;
   margin-right: 0;
   font-size: 1.2em;

@@ -1,0 +1,36 @@
+.container {
+    // padding: 0;
+.col {
+    padding: 0;
+}
+
+.arrows {
+    position: relative;
+    background-color: red;
+    z-index: 1000;
+    // height: 100%;
+    
+    .arrow-left {
+        position: absolute;
+        height: 3em;
+        width: 3rem;
+        top: -1.5em;
+        left: -1.5em;
+        background-color: #d0d0d0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .arrow-right {
+        position: absolute;
+        height: 3em;
+        width: 3rem;
+        top: -1.5em;
+        right: -1.5em;
+        background-color: #ffdc4e;
+        display: flex;
+        justify-content: center;
+        transform: rotate(180deg);
+    }
+}
+}

@@ -1,14 +1,29 @@
+.container {
+    padding: 0;
+    width: 100%;
+    // position: relative;
+
 .col-more {
     margin-left: auto; 
     margin-right: 0;
+    padding: 0;
+    width: 10em;
+    height: 10em;
 
 .more {
     background-color: #FFDC4e;
-    height: 6em;
-    font-weight: 500;
-    padding: 1em;
+    height: 100%;
+    font-weight: 500;   
+    padding: 1.5em;
     margin-left: auto; 
     margin-right: 0;
     font-size: 1.2em;
 }
 }
+}
+
+// .container:before {
+//     content:     "";
+//     display:     block;
+//     padding-top: 10%;
+// }

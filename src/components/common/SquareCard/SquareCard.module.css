@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.container--light {
+  background-color: #FAFAFA;
+}
+
+.container--light .content .row-bot .col {
+  color: #f3f3f3;
+}
+
+.container--dark {
+  background-color: #f3f3f3;
+}
+
+.container--dark .content .row-bot .col {
+  color: #FAFAFA;
+}
+
+.container--yellow {
+  background-color: #ffdc4e;
+}
+
+.container--yellow .content .row-bot .col {
+  color: #F2D043;
+}
+
+.container .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.container .content .row-top {
+  height: 100%;
+  padding: 1.5em;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.container .content .row-top .col {
+  height: 100%;
+  z-index: 100;
+}
+
+.container .content .row-top .col span {
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.container .content .row-bot .col {
+  line-height: 0.7em;
+  position: absolute;
+  bottom: 0;
+  font-size: 8em;
+  font-weight: 600;
+}
+
+.container:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container .content .row-top .col span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=SquareCard.module.css.map */
