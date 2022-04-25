@@ -9,6 +9,7 @@ import { CatalogueSection } from './components/Sections/CatalogueSection';
 import { EventsSection } from './components/Sections/EventsSection';
 import { OurPublicationsSection } from './components/Sections/OurPublicationsSection';
 import { ParagraphSection } from './components/Sections/ParagraphSection';
+import { RecommendedSection } from './components/Sections/RecommendedSection';
 import { VideoSection } from './components/Sections/VideoSection';
 
 export function Home() {
@@ -24,6 +25,7 @@ export function Home() {
         <CatalogueSection />
         <VideoSection />
         <ParagraphSection />
+        <RecommendedSection />
       </Layout>
     </>
   );

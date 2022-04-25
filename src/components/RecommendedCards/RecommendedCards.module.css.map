@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,CAAC;CASb;;AAVD,AAGI,UAHM,CAGN,KAAK,CAAC;EACF,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "RecommendedCards.module.scss"
+    ],
+    "names": [],
+    "file": "RecommendedCards.module.css"
+}
