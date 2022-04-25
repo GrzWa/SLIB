@@ -3,23 +3,32 @@
     width: 100%;
     // position: relative;
 
-.col-more {
-    margin-left: auto; 
-    margin-right: 0;
-    padding: 0;
-    width: 10em;
-    height: 10em;
+    .col-more {
+        margin-left: auto; 
+        margin-right: 0;
+        padding: 0;
+        width: 10em;
+        height: 10em;
 
-.more {
-    background-color: #FFDC4e;
-    height: 100%;
-    font-weight: 500;   
-    padding: 1.5em;
-    margin-left: auto; 
-    margin-right: 0;
-    font-size: 1.2em;
-}
-}
+        .border {
+            border: 1px solid black;
+        }
+
+        .more {
+            background-color: #FFDC4e;
+            height: 100%;
+            font-weight: 500;   
+            padding: 1.5em;
+            margin-left: auto; 
+            margin-right: 0;
+            font-size: 1.2em;
+        }
+    }
+
+    .center {
+            margin-right: auto !important;
+    }
+
 }
 
 // .container:before {

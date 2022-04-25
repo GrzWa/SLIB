@@ -11,6 +11,10 @@
   height: 10em;
 }
 
+.container .col-more .border {
+  border: 1px solid black;
+}
+
 .container .col-more .more {
   background-color: #FFDC4e;
   height: 100%;
@@ -19,5 +23,9 @@
   margin-left: auto;
   margin-right: 0;
   font-size: 1.2em;
+}
+
+.container .center {
+  margin-right: auto !important;
 }
 /*# sourceMappingURL=SeeMore.module.css.map */

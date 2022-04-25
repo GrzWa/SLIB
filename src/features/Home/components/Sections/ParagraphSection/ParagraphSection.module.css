@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+.container .background {
+  position: absolute;
+  width: 50vw;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+  background-color: #fafafa;
+  right: 50%;
+  z-index: -100;
+}
+/*# sourceMappingURL=ParagraphSection.module.css.map */

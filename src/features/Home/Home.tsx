@@ -8,6 +8,7 @@ import {
 import { CatalogueSection } from './components/Sections/CatalogueSection';
 import { EventsSection } from './components/Sections/EventsSection';
 import { OurPublicationsSection } from './components/Sections/OurPublicationsSection';
+import { ParagraphSection } from './components/Sections/ParagraphSection';
 import { VideoSection } from './components/Sections/VideoSection';
 
 export function Home() {
@@ -22,6 +23,7 @@ export function Home() {
         <OurPublicationsSection />
         <CatalogueSection />
         <VideoSection />
+        <ParagraphSection />
       </Layout>
     </>
   );
