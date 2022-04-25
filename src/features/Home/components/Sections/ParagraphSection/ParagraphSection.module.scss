@@ -1,5 +1,14 @@
 .container {
     position: relative;
+    padding-bottom: 5em;
+    margin-bottom: 6em;
+
+    .see-more {
+        position: absolute;
+        right: 0;
+        bottom: -5vw;
+    }
+
     .background {
         position: absolute;
         width: 50vw;
@@ -8,10 +17,27 @@
         margin: auto;
         background-color: #fafafa;
         right: 50%;
-        // transform: translateX(-50%);
         z-index: -100;
     }
 
-    .left {
+    .row {
+        padding-bottom: 2em;
+        .left {
+            padding-right: 5em;
+        }
+        
+
+        .right {
+            .content {
+                padding: 4em;
+                .paragraph {
+                    font-weight: 200;
+                    padding-bottom: 2em;
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
     }

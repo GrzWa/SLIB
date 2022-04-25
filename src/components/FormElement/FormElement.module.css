@@ -1,0 +1,18 @@
+.container {
+  padding-top: 2em;
+}
+
+.container .title {
+  font-weight: 500;
+}
+
+.container .description {
+  font-weight: 200;
+}
+
+.container input {
+  width: 100%;
+  border: 1px solid grey;
+  line-height: 1.8em;
+}
+/*# sourceMappingURL=FormElement.module.css.map */

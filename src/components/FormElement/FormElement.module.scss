@@ -1,0 +1,17 @@
+.container {
+    padding-top: 2em;
+
+    .title {
+        font-weight: 500;
+    }
+
+    .description {
+        font-weight: 200;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid grey;
+        line-height: 1.8em;
+    }
+}

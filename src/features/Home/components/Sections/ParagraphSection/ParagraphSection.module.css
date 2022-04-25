@@ -1,5 +1,13 @@
 .container {
   position: relative;
+  padding-bottom: 5em;
+  margin-bottom: 6em;
+}
+
+.container .see-more {
+  position: absolute;
+  right: 0;
+  bottom: -5vw;
 }
 
 .container .background {
@@ -11,5 +19,26 @@
   background-color: #fafafa;
   right: 50%;
   z-index: -100;
+}
+
+.container .row {
+  padding-bottom: 2em;
+}
+
+.container .row .left {
+  padding-right: 5em;
+}
+
+.container .row .right .content {
+  padding: 4em;
+}
+
+.container .row .right .content .paragraph {
+  font-weight: 200;
+  padding-bottom: 2em;
+}
+
+.container .row .right .content .paragraph span {
+  font-weight: 500;
 }
 /*# sourceMappingURL=ParagraphSection.module.css.map */
