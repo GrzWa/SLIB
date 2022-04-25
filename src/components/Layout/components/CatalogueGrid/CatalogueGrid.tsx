@@ -27,7 +27,7 @@ export const CatalogueGrid = () => {
       <Container className={styles.container}>
         <Row>
           <Col lg={3} md={4} sm={6} className={styles.col}>
-            <SquareCard variant="light" data={sqr01} />
+            <SquareCard variant="lightest" data={sqr01} />
           </Col>
           <Col
             lg={3}
@@ -35,13 +35,13 @@ export const CatalogueGrid = () => {
             sm={6}
             className={`d-none d-sm-inline ${styles.col}`}
           >
-            <SquareCard data={sqr02} variant="dark" />
+            <SquareCard data={sqr02} variant="light" />
           </Col>
           <Col lg={3} md={4} className={`d-none d-md-inline ${styles.col}`}>
-            <SquareCard data={sqr03} variant="light" />
+            <SquareCard data={sqr03} variant="lightest" />
           </Col>
           <Col lg={3} className={`d-none d-lg-inline ${styles.col}`}>
-            <SquareCard data={sqr04} variant="dark" />
+            <SquareCard data={sqr04} variant="light" />
           </Col>
         </Row>
         <div className={styles.arrows}>
@@ -56,7 +56,7 @@ export const CatalogueGrid = () => {
 
         <Row>
           <Col lg={3} md={4} sm={6} className={styles.col}>
-            <SquareCard variant="dark" data={sqr09} />
+            <SquareCard variant="light" data={sqr09} />
           </Col>
           <Col
             lg={3}
@@ -67,10 +67,10 @@ export const CatalogueGrid = () => {
             <SquareCard data={sqr10} variant="yellow" />
           </Col>
           <Col lg={3} md={4} className={`d-none d-md-inline ${styles.col}`}>
-            <SquareCard data={sqr11} variant="dark" />
+            <SquareCard data={sqr11} variant="light" />
           </Col>
           <Col lg={3} className={`d-none d-lg-inline ${styles.col}`}>
-            <SquareCard data={sqr12} variant="light" />
+            <SquareCard data={sqr12} variant="lightest" />
           </Col>
         </Row>
       </Container>
@@ -92,18 +92,18 @@ export const CatalogueGrid = () => {
             md={6}
             className={`d-none d-md-inline ${styles.col}`}
           >
-            <SquareCard data={sqr02} variant="dark" />
+            <SquareCard data={sqr02} variant="light" />
           </Col>
           <Col xl={3} lg={4} className={`d-none d-lg-inline ${styles.col}`}>
             <SquareCard data={sqr03} variant="light" />
           </Col>
           <Col xl={3} className={`d-none d-xl-inline ${styles.col}`}>
-            <SquareCard data={sqr04} variant="dark" />
+            <SquareCard data={sqr04} variant="light" />
           </Col>
         </Row>
         <Row>
           <Col xl={3} lg={4} md={6} sm={12} className={styles.col}>
-            <SquareCard variant="dark" data={sqr09} />
+            <SquareCard variant="light" data={sqr09} />
           </Col>
           <Col
             xl={3}
@@ -114,7 +114,7 @@ export const CatalogueGrid = () => {
             <SquareCard data={sqr10} variant="yellow" />
           </Col>
           <Col xl={3} lg={4} className={`d-none d-lg-inline ${styles.col}`}>
-            <SquareCard data={sqr11} variant="dark" />
+            <SquareCard data={sqr11} variant="light" />
           </Col>
           <Col xl={3} className={`d-none d-xl-inline ${styles.col}`}>
             <SquareCard data={sqr12} variant="light" />

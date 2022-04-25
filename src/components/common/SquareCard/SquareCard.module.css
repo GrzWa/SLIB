@@ -4,19 +4,31 @@
 }
 
 .container--light {
-  background-color: #FAFAFA;
+  background-color: #f3f3f3;
 }
 
 .container--light .content .row-bot .col {
+  color: #FAFAFA;
+}
+
+.container--lightest {
+  background-color: #FAFAFA;
+}
+
+.container--lightest .content .row-bot .col {
   color: #f3f3f3;
 }
 
 .container--dark {
-  background-color: #f3f3f3;
+  background-color: #2c2c2c;
+}
+
+.container--dark .content .row-top .col {
+  color: #fff;
 }
 
 .container--dark .content .row-bot .col {
-  color: #FAFAFA;
+  color: #FFF;
 }
 
 .container--yellow {

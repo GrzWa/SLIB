@@ -4,6 +4,17 @@
     // padding: 0;
 
     &--light {
+    background-color: #f3f3f3;
+    .content {
+        .row-bot {
+            .col{
+                color: #FAFAFA;
+            }
+        }
+    }
+    }
+
+    &--lightest {
     background-color: #FAFAFA;
     .content {
         .row-bot {
@@ -15,11 +26,16 @@
     }
 
     &--dark {
-    background-color: #f3f3f3;
+    background-color: #2c2c2c;
     .content {
+        .row-top {
+            .col {
+                color: #fff;
+            }
+        }
         .row-bot {
             .col{
-                color: #FAFAFA;
+                color: #FFF;
             }
         }
     }
