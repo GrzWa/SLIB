@@ -5,5 +5,22 @@
     .logo {
         height: 10em;
     }
+
+    .bottom {
+        padding: 2em 0;
+        background-color: #efefef;
+        .left {
+
+        }
+
+        .right {
+            text-align: center;
+
+            .img {
+                display: inline;
+                padding: 1em;
+            }
+        }
+    }
     
 }

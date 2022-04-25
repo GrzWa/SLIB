@@ -6,4 +6,18 @@
 .container .logo {
   height: 10em;
 }
+
+.container .bottom {
+  padding: 2em 0;
+  background-color: #efefef;
+}
+
+.container .bottom .right {
+  text-align: center;
+}
+
+.container .bottom .right .img {
+  display: inline;
+  padding: 1em;
+}
 /*# sourceMappingURL=Footer.module.css.map */

@@ -3,6 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import styles from './Footer.module.css';
 import { LogoSL } from '@/components/Icons';
 import { FooterColumn } from './FooterColumn';
+import FB from '@/public/images/icons/FB.svg';
+import TW from '@/public/images/icons/TW.svg';
 
 export const Footer = () => {
   const col1 = { top: [`Aktualności`, `Kontakt`, `Dołącz!`] };
@@ -81,6 +83,19 @@ export const Footer = () => {
           <FooterColumn data={col4} />
           <FooterColumn data={col5} />
           <FooterColumn data={col6} />
+        </Row>
+        <Row className={styles.bottom}>
+          <Col sm={4} className={styles.left}>
+            © 2021 Stowarzyszenie Libertariańskie. All Rights Reserved
+          </Col>
+          <Col sm={8} className={styles.right}>
+            <div className={styles.img}>
+              <Image src={FB} alt="Facebook" />
+            </div>
+            <div className={styles.img}>
+              <Image src={TW} alt="Twitter" className={styles.img} />
+            </div>
+          </Col>
         </Row>
       </Container>
     </>
