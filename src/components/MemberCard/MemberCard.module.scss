@@ -1,0 +1,30 @@
+.col {
+    max-width: 20em;
+    margin-bottom: 2em;
+    
+    .img {
+        background-color: #1f1f1f;
+    }
+
+    .bottom {
+        background-color: #1f1f1f;
+        color: #fff;
+        text-align: center;
+        padding: 1.2em 0;
+        margin: -0.5em 0;
+
+        .name {
+            font-weight: 600;
+        }
+
+        .title {
+            font-weight: 00;
+            font-size: 0.8em;
+        }
+    }
+
+    .bottom:hover {
+        background-color: #ffcd4e;
+        color: #000;
+    }
+}

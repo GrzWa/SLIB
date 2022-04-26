@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,aAAa,EAAE,GAAG;CACrB;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,QAAQ;EAChB,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,eAAe;CAKjC;;AATD,AAMI,KANC,CAMD,IAAI,CAAC;EACD,SAAS,EAAE,cAAc;CAC5B",
+    "sources": [
+        "MembersSection.module.scss"
+    ],
+    "names": [],
+    "file": "MembersSection.module.css"
+}

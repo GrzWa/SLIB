@@ -1,0 +1,16 @@
+.row {
+  margin-bottom: 2em;
+}
+
+.link {
+  width: 10em;
+  margin: 2em auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.link .img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=MembersSection.module.css.map */
