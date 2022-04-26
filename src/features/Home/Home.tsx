@@ -10,6 +10,7 @@ import { EventsSection } from './components/Sections/EventsSection';
 import { MembersSection } from './components/Sections/MembersSection';
 import { OurPublicationsSection } from './components/Sections/OurPublicationsSection';
 import { ParagraphSection } from './components/Sections/ParagraphSection';
+import { PartnersSection } from './components/Sections/PartnersSection';
 import { RecommendedSection } from './components/Sections/RecommendedSection';
 import { VideoSection } from './components/Sections/VideoSection';
 
@@ -28,6 +29,7 @@ export function Home() {
         <ParagraphSection />
         <RecommendedSection />
         <MembersSection />
+        <PartnersSection />
       </Layout>
     </>
   );

@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 2em;
+}
+
+.container .col {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=PartnersSection.module.css.map */
