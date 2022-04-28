@@ -1,0 +1,60 @@
+.section {
+  position: relative;
+}
+
+.section .background {
+  position: absolute;
+  width: 100vw;
+  overflow: hidden;
+  height: 100%;
+  margin: auto;
+  background-color: #ffdc4e;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -100;
+}
+
+.section .container {
+  padding: 4em 0;
+}
+
+.section .container .text {
+  font-weight: 200;
+  padding-bottom: 2em;
+  text-align: left;
+}
+
+.section .container .text span {
+  font-weight: 600;
+}
+
+.section .container .text div {
+  font-size: 2em;
+  padding-bottom: 1em;
+  line-height: 1em;
+  font-weight: 300;
+}
+
+.section .container .form {
+  margin-left: 2em;
+}
+
+.section .container .form input {
+  width: 100%;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  border-width: 0px;
+  padding: 0.4em 1.5em;
+}
+
+.section .container .form .zgoda {
+  padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 991px) {
+  .section .container .text {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=NewsletterSection.module.css.map */

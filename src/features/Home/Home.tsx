@@ -8,6 +8,7 @@ import {
 import { CatalogueSection } from './components/Sections/CatalogueSection';
 import { EventsSection } from './components/Sections/EventsSection';
 import { MembersSection } from './components/Sections/MembersSection';
+import { NewsletterSection } from './components/Sections/NewsletterSection';
 import { OurPublicationsSection } from './components/Sections/OurPublicationsSection';
 import { ParagraphSection } from './components/Sections/ParagraphSection';
 import { PartnersSection } from './components/Sections/PartnersSection';
@@ -30,6 +31,7 @@ export function Home() {
         <RecommendedSection />
         <MembersSection />
         <PartnersSection />
+        <NewsletterSection />
       </Layout>
     </>
   );

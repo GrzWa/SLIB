@@ -3,7 +3,7 @@ import { FC } from 'react';
 import clsx from 'clsx';
 
 interface Props {
-  variant: 'yellow' | 'white' | 'black';
+  variant?: 'yellow' | 'white' | 'black';
 }
 
 export const Button: FC<Props> = ({ children, variant = `yellow` }) => {
