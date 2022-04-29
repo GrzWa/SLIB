@@ -1,44 +1,48 @@
-.custom-btn {
-  width: 140px;
-  height: 50px;
-  font-size: 0.8em;
-  font-weight: 600;
-  color: black;
-  margin-right: 2em;
+.container {
+  height: 55em;
 }
 
-.ylw {
-  background-color: #FFDC4E;
-}
-
-.murray {
+.container .background {
   position: absolute;
-  right: 0;
-  top: 4em;
+  height: inherit;
+  width: 100vw;
+  overflow: hidden;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+.container .background .img {
   width: 45em;
+  max-width: 65vw;
   margin-left: auto;
   margin-right: 0;
 }
 
-.hero-card {
-  width: 30em;
-  margin-top: 16em;
-  margin-bottom: 16em;
+.container .card {
+  padding-top: 16rem;
+  width: 30rem;
   color: black;
 }
 
-.hero-card h5 {
+.container .card .button > * {
+  margin-right: 2em;
+}
+
+.container .card .title {
   font-weight: bold;
   font-size: 3em;
 }
 
-.hero-card h6 {
+.container .card .subtitle {
   font-weight: 200;
   font-size: 3em;
   margin-bottom: 0.5em;
 }
 
-.hero-card p {
+.container .card p {
   font-weight: 200;
   font-style: italic;
 }
