@@ -6,8 +6,46 @@
     z-index: -10;
 }
 
-// @media only screen and (max-width: 768px) {
-//     .bg {
-//         width: 100vw;
-//     }
-// }
+.navbar {
+    padding: 0;
+
+    .container {
+        width: 78vw;
+        margin: 0 auto;
+        display: flex;
+
+        .collapsed {
+            margin-left: auto;
+        }
+
+        .nav-brand {
+            padding: 0;
+            min-width: 8em;
+        }
+        
+        .menu {
+            display: flex;
+            margin: auto 0;
+            width: 100%;
+            
+            .bar-left {
+                width: 80%;
+            }
+            .bar-right {
+                width: 20%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+    
+        .container {
+            width: 100vw;
+            
+        }
+    
+    }
+}

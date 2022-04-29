@@ -1,19 +1,17 @@
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
 import { MenuItem } from './MenuItem';
+import styles from './MenuItems.module.css'
+
 
 export const MenuItems = ({ data }: any) => {
-  // console.log(data);
+
   return (
     <>
-      <Container style={{ padding: `0` }}>
-        <Row style={{ margin: `0` }}>
-          {data?.map((props: any) => (
-            <Col key={props} lg={1} style={{ minWidth: `6.5vw`, padding: `0` }}>
-              <MenuItem key={props} item={props} />
-            </Col>
-          ))}
-        </Row>
-      </Container>
+    {data?.map((props: any) => {if (true) {
+      return (<Nav.Link href="#" className={styles.element}>{props}</Nav.Link>)
+      }}
+    
+      )}
     </>
   );
 };
