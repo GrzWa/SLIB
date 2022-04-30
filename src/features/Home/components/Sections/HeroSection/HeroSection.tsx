@@ -6,11 +6,6 @@ import { Button } from '@/components/Button/';
 export const HeroSection = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.background}>
-        <div className={styles.img}>
-          <Image src={Murray_Rothbard} alt="Murray Rothbard"/>
-        </div>
-      </div>
       <div className={styles.card}>
           <div className={styles.title}>Lorem ipsum</div>
           <div className={styles.subtitle}>
@@ -24,6 +19,11 @@ export const HeroSection = () => {
             <Button variant="yellow">Consequatur</Button>
             <Button variant="black">Similique sunt</Button>
           </div>
+      </div>
+      <div className={styles.background}>
+        <div className={styles.img}>
+          <Image src={Murray_Rothbard} alt="Murray Rothbard"/>
+        </div>
       </div>
     </div>
     );

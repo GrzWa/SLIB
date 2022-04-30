@@ -1,6 +1,12 @@
-.checkered {
+.container {
+  position: relative;
+  .checkered {
     position: absolute;
-    left: 0;
-    top: 60.5em;
     z-index: -10;
+    width: 100vw;
+    overflow: hidden;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
+}

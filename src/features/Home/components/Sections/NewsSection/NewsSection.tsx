@@ -9,12 +9,12 @@ export const NewsSection = () => {
   const alignment = `center`;
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.checkered}>
         <Image src={checkered} alt="background" />
       </div>
       <Title title={title} alignment={alignment} />
       <NewsGrid />
-    </>
+    </div>
   );
 };

@@ -7,24 +7,30 @@
   height: inherit;
   width: 100vw;
   overflow: hidden;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: 100;
+  z-index: -10;
 }
 
 .container .background .img {
+  position: absolute;
   width: 45em;
   max-width: 65vw;
-  margin-left: auto;
-  margin-right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .container .card {
-  padding-top: 16rem;
-  width: 30rem;
+  position: absolute;
+  padding-top: 16em;
+  max-width: 30em;
   color: black;
+  z-index: 1000;
 }
 
 .container .card .button > * {
@@ -45,5 +51,23 @@
 .container .card p {
   font-weight: 200;
   font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .container {
+    height: auto;
+  }
+  .container .background {
+    height: 20em;
+    min-height: 80vw;
+    position: relative;
+  }
+  .container .card {
+    position: relative;
+    font-size: 0.8em;
+    margin: 0;
+    margin: 0 auto;
+    padding: 5em 2em 0 2em;
+  }
 }
 /*# sourceMappingURL=HeroSection.module.css.map */

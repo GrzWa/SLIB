@@ -11,7 +11,8 @@
 }
 
 .navbar .container {
-  width: 78vw;
+  width: 100vw;
+  max-width: 100vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,9 +44,9 @@
   width: 20%;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 600px) {
   .navbar .container {
-    width: 100vw;
+    width: 78vw;
   }
 }
 /*# sourceMappingURL=header.module.css.map */
