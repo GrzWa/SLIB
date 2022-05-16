@@ -3,7 +3,19 @@ import styles from './HeroSection.module.css';
 import Murray_Rothbard from '@/public/images/backgrounds/Murray_Rothbard.png';
 import { Button } from '@/components/Button/';
 
-export const HeroSection = () => {
+const buttons = [
+  {
+    label: "Button",
+    color: "",
+    link: 'http;//'
+  },
+  {
+    label: "Button",
+    link: 'http;//'
+  }
+]
+
+export const HeroSection = ({data:{title, subtitle, decription, buttons }}) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -16,6 +28,7 @@ export const HeroSection = () => {
             impedit quo minus.
           </p>
           <div className={styles.button}>
+            {/* {buttons?.map()} */}
             <Button variant="yellow">Consequatur</Button>
             <Button variant="black">Similique sunt</Button>
           </div>

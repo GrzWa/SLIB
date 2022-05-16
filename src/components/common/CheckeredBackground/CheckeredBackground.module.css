@@ -12,4 +12,10 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-/*# sourceMappingURL=NewsSection.module.css.map */
+
+@media (max-width: 768px) {
+  .container .checkered {
+    width: 200vw;
+  }
+}
+/*# sourceMappingURL=CheckeredBackground.module.css.map */

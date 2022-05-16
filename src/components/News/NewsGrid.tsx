@@ -11,6 +11,14 @@ import Image from 'next/image';
 import { Col, Row } from 'react-bootstrap';
 
 export const NewsGrid = () => {
+
+  const card1 = {img: img1, date: '27 stycznia 2021', text: `Brad Polumbo – Tulsi Gabbard i Thomas Massie w obronie 4.
+  poprawki`}
+  const card2 = {img: img2, date: '27 stycznia 2021', text: `Łukasz Frontczak – Co robić, gdy znikniemy z Facebooka?`}
+  const card3 = {img: img3, date: '27 stycznia 2021', text: `Audiobook z „Libertariańskimi dylematami” Jakuba Bożydara
+  Wiśniewskiego`}
+  const card4 = {img: img4, date: '', text: ``}
+
   return (
     <>
       <div className="container">
@@ -60,8 +68,7 @@ export const NewsGrid = () => {
           </Col>
         </Row>
         <Row>
-          {/* <div className="row justify-content-center"> */}
-          <div className="col-3 pe-1 ps-1">
+          <Col md={3} sm={6}>
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img1} className="card-img-top" alt="img1" />
               <div className="card-body">
@@ -75,8 +82,8 @@ export const NewsGrid = () => {
                 <Image src={czytaj} alt="Idź" />
               </div>
             </div>
-          </div>
-          <div className="col-3 pe-1 ps-1">
+          </Col>
+          <Col md={3} sm={6}>
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img2} className="card-img-top" alt="img2" />
               <div className="card-body">
@@ -89,8 +96,8 @@ export const NewsGrid = () => {
                 <Image src={czytaj} alt="Idź" />
               </div>
             </div>
-          </div>
-          <div className="col-3 pe-1 ps-1">
+          </Col>
+          <Col md={3} sm={6}>
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img3} className="card-img-top" alt="img3" />
               <div className="card-body">
@@ -109,14 +116,13 @@ export const NewsGrid = () => {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="col-3 pe-1 ps-1">
+          </Col>
+          <Col md={3} sm={6}>
             <div className="card" style={{ height: `35rem` }}>
               <Image src={img4} className="card-img-top" alt="img4" />
               <div className="card-body"></div>
             </div>
-          </div>
-          {/* </div> */}
+          </Col>
         </Row>
       </div>
     </>

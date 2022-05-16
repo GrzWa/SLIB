@@ -1,11 +1,13 @@
 .main {
-  width: 78vw;
   margin: 0 auto;
+  width: 100vw;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .main {
-    width: 100vw;
+    width: 78vw;
+    overflow: visible;
   }
 }
 /*# sourceMappingURL=Main.module.css.map */

@@ -15,11 +15,12 @@ import { PartnersSection } from './components/Sections/PartnersSection';
 import { RecommendedSection } from './components/Sections/RecommendedSection';
 import { VideoSection } from './components/Sections/VideoSection';
 
-export function Home() {
+export function Home({data}) {
+  // const {heroSection, } = data
   return (
     <>
       <Layout>
-        <HeroSection />
+        <HeroSection data={heroSection} />
         <NewsSection />
         <SupportUsSection />
         <OurValuesSection />
