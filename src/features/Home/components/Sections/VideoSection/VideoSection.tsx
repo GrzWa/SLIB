@@ -2,19 +2,12 @@ import { Title } from '@/components/common';
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
 import styles from './VideoSection.module.css';
-import yt_temp from '@/public/images/img/yt_temp.png';
+// import yt_temp from '@/public/images/img/yt_temp.png';
 import { SquareCard } from '@/components/common/SquareCard';
 
-export const VideoSection = () => {
-  const card1 = { title: `Młodzież Kontra` };
-  const card2 = {
-    title: `Wykłady 
-  i prelekcje`,
-  };
-  const card3 = { title: `Bez Retuszu` };
-  const card4 = { title: `Wywiady` };
-  const card5 = { title: `Inne` };
-
+export const VideoSection = ({
+  data: { card1, card2, card3, card4, card5, video },
+}) => {
   return (
     <div className={styles[`main-container`]}>
       <div className={styles.background} />
@@ -22,19 +15,11 @@ export const VideoSection = () => {
       <Container>
         <Row>
           <Col md={8} sm={12}>
-            <Image src={yt_temp} alt="wideo" />
+            <Image src={video.image} alt="wideo" />
           </Col>
           <Col md={4} sm={12}>
-            <div className={styles.title}>
-              Młodzież kontra 636: Jacek Wilk (Wolność) 14.04.2018
-            </div>
-            <div className={styles.text}>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni.
-            </div>
+            <div className={styles.title}>{video.title}</div>
+            <div className={styles.text}>{video.text}</div>
           </Col>
         </Row>
         <Row

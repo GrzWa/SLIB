@@ -1,90 +1,27 @@
-.center {
-  justify-content: center;
-  font-size: 0.8em;
-  .col-big {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
+.section {
+  position: relative;
+  padding-bottom: 5em;
 
-    .card {
-      position: relative;
-      padding: 3.5em;
-      background-color: white;
-      height: 100%;
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    background-color: #FAFAFA;
+    margin: auto;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -100;
+  }
 
-      .data {
-        
-        color: #ABABAB;
-        margin: 0;
-        padding-top: 1em;
-      }
+  .center {
+    justify-content: center;
 
-      .title {
-        font-size: 1.5em;
-        font-weight: 600;
-        padding: 1em 0;
-      }
-
-      .text {
-        // background-color: bisque;
-        max-height: 35%;
-        overflow: hidden;
-        line-height: 200%;
-      }
-
-      .buttons {
-        position: absolute;
-        margin: auto 0;
-        padding: auto 0;
-        bottom: 5em;
-      }
+    .col-big {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
-
-
-.custom-btn {
-    width: 140px;
-    height: 40px;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: black;
-  }
-
-  .custom-btn2 {
-    height: 25px;
-    font-size: 0.6em;
-    font-weight: 400;
-    color: #999;
-    border: 1px solid #999;
-    border-radius: 2em;
-    margin-right: 2em;
-  }
-
-  // .card {
-  //     padding: 4em;
-  //     height: 100%;
-
-  //     h5 {
-  //         font-weight: bold;
-  //         font-size: 1.4em;
-  //         padding: 0.5em 0;
-  //     }
-
-  //     p{
-  //       font-size: 0.7em;
-  //         font-weight: 300;
-  //     }
-
-  //     .buttons {
-  //       position: absolute;
-  //       bottom: 1em;
-  //     }
-
-  // }
-
-
-//   @media only screen and (max-width: 768px) {
-   
-// }

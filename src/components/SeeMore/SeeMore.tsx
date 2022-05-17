@@ -16,7 +16,6 @@ export const SeeMore: FC<Props> = ({ alignment, border }) => {
     alignment === `center` && styles.center,
   ]);
 
-  console.log(cls);
   return (
     <>
       <Container className={styles.container}>

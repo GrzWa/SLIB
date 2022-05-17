@@ -1,11 +1,11 @@
 import { Title } from '@/components/common';
 import { EventsGrid } from '@/components/Layout/components/EventsGrid';
 
-export const EventsSection = () => {
+export const EventsSection = ({ data }) => {
   return (
     <>
       <Title title="Nadchodzące wydarzenia" alignment="center" />
-      <EventsGrid />
+      <EventsGrid data={data} />
     </>
   );
 };

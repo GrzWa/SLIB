@@ -15,23 +15,35 @@ import { PartnersSection } from './components/Sections/PartnersSection';
 import { RecommendedSection } from './components/Sections/RecommendedSection';
 import { VideoSection } from './components/Sections/VideoSection';
 
-export function Home({data}) {
-  // const {heroSection, } = data
+export function Home({ data }) {
+  const {
+    heroSection,
+    newsSection,
+    ourValuesSection,
+    eventsSection,
+    ourPublicationsSection,
+    catalogueSection,
+    videoSection,
+    paragraphSection,
+    recommendedSection,
+    membersSection,
+    partnersSection,
+  } = data;
   return (
     <>
       <Layout>
         <HeroSection data={heroSection} />
-        <NewsSection />
+        <NewsSection data={newsSection} />
         <SupportUsSection />
-        <OurValuesSection />
-        <EventsSection />
-        <OurPublicationsSection />
-        <CatalogueSection />
-        <VideoSection />
-        <ParagraphSection />
-        <RecommendedSection />
-        <MembersSection />
-        <PartnersSection />
+        <OurValuesSection data={ourValuesSection} />
+        <EventsSection data={eventsSection} />
+        <OurPublicationsSection data={ourPublicationsSection} />
+        <CatalogueSection data={catalogueSection} />
+        <VideoSection data={videoSection} />
+        <ParagraphSection data={paragraphSection} />
+        <RecommendedSection data={recommendedSection} />
+        <MembersSection data={membersSection} />
+        <PartnersSection data={partnersSection} />
         <NewsletterSection />
       </Layout>
     </>

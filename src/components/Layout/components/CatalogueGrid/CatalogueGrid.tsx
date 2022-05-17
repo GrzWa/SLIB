@@ -5,23 +5,22 @@ import arrow_left from '@/public/images/icons/arrow_left.svg';
 import Image from 'next/image';
 import { SeeMore } from '@/components/SeeMore';
 
-export const CatalogueGrid = () => {
-  const sqr01 = { num: `01`, title: `Definiowanie libertarianizmu` };
-  const sqr02 = { num: `02`, title: `Libertarianizm a liberalizm` };
-  const sqr03 = { num: `03`, title: `Libertarianizm a anarchizm` };
-  const sqr04 = { num: `04`, title: `Libertarianizm a marksizm` };
-  const sqr09 = { num: `09`, title: `Minarchizm` };
-  const sqr10 = { num: `10`, title: `Anarchokapitalizm` };
-  const sqr11 = {
-    num: `11`,
-    title: `„Prawica” i „lewica” w libertarianizmie`,
-    text: `„Lewicowy” libertarianizm – agoryzm
-  
-    „Lewicowy” libertarianizm – mutualizm
-    
-    „Prawicowy” libertarianizm – paleolibertarianizm`,
-  };
-  const sqr12 = { num: `12`, title: `Obiektywizm` };
+export const CatalogueGrid = ({
+  data: {
+    sqr01,
+    sqr02,
+    sqr03,
+    sqr04,
+    sqr05,
+    sqr06,
+    sqr07,
+    sqr08,
+    sqr09,
+    sqr10,
+    sqr11,
+    sqr12,
+  },
+}) => {
   return (
     <>
       <Container className={styles.container}>
@@ -78,48 +77,3 @@ export const CatalogueGrid = () => {
     </>
   );
 };
-
-{
-  /* <>
-      <Container>
-        <Row>
-          <Col xl={3} lg={4} md={6} sm={12} className={styles.col}>
-            <SquareCard variant="light" data={sqr01} />
-          </Col>
-          <Col
-            xl={3}
-            lg={4}
-            md={6}
-            className={`d-none d-md-inline ${styles.col}`}
-          >
-            <SquareCard data={sqr02} variant="light" />
-          </Col>
-          <Col xl={3} lg={4} className={`d-none d-lg-inline ${styles.col}`}>
-            <SquareCard data={sqr03} variant="light" />
-          </Col>
-          <Col xl={3} className={`d-none d-xl-inline ${styles.col}`}>
-            <SquareCard data={sqr04} variant="light" />
-          </Col>
-        </Row>
-        <Row>
-          <Col xl={3} lg={4} md={6} sm={12} className={styles.col}>
-            <SquareCard variant="light" data={sqr09} />
-          </Col>
-          <Col
-            xl={3}
-            lg={4}
-            md={6}
-            className={`d-none d-md-inline ${styles.col}`}
-          >
-            <SquareCard data={sqr10} variant="yellow" />
-          </Col>
-          <Col xl={3} lg={4} className={`d-none d-lg-inline ${styles.col}`}>
-            <SquareCard data={sqr11} variant="light" />
-          </Col>
-          <Col xl={3} className={`d-none d-xl-inline ${styles.col}`}>
-            <SquareCard data={sqr12} variant="light" />
-          </Col>
-        </Row>
-      </Container>
-    </> */
-}

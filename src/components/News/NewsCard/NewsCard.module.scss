@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    // background-color: white;
+    box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.1);
+    height: 100%;
+    
+    // .image {
+      // min-height: 15em;
+    // }
+
+    .content {
+      background-color: white;
+      padding: 8%;
+      height: 100%;
+
+      .data {
+        color: #ABABAB;
+        margin: 0;
+        font-size: 0.8em;
+      }
+
+      .title {
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 1em 0;
+      }
+
+      .subtitle {
+        font-size: 0.8em;
+        max-height: 35%;
+        overflow: hidden;
+        line-height: 200%;
+        font-weight: 300;
+      }
+
+      .buttons {
+        font-size: 0.8em;
+        position: absolute;
+        margin: auto 0;
+        padding: auto 0;
+        bottom: 4em;
+
+        > * {
+            margin-right: 2em;
+        }
+      }
+  }
+
+  .square {
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+
+  }
