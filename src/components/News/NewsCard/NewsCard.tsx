@@ -10,7 +10,7 @@ export const NewsCard = ({ data }) => {
   return (
     <div className={styles.card}>
       {image ? (
-        <div className={title ? styles.square : ``}>
+        <div className={title && !author ? styles.square : styles.image}>
           <Image src={image} alt="" />
         </div>
       ) : null}
@@ -18,7 +18,9 @@ export const NewsCard = ({ data }) => {
       {title ? (
         <div
           className={
-            image ? `${styles.content} ${styles.square}` : styles.content
+            image && !author
+              ? `${styles.content} ${styles.square}`
+              : styles.content
           }
         >
           {date ? (

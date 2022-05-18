@@ -4,8 +4,8 @@ import styles from './Title.module.css';
 
 interface Props {
   title: string;
-  text?: 'black' | 'white';
-  underline?: 'yellow' | 'dark';
+  text?: 'black' | 'white' | 'thin';
+  underline?: 'yellow' | 'dark' | 'grey';
   alignment?: 'center' | 'left';
 }
 
@@ -19,8 +19,10 @@ export const Title: FC<Props> = ({
     styles.title,
     text === `black` && styles[`t-black`],
     text === `white` && styles[`t-white`],
+    text === `thin` && styles[`t-thin`],
     underline === `yellow` && styles[`u-yellow`],
     underline === `dark` && styles[`u-dark`],
+    underline === `grey` && styles[`u-grey`],
     alignment === `center` && styles.center,
     alignment === `left` && styles.left,
   );

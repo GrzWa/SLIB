@@ -1,0 +1,13 @@
+.item {
+  padding: 1em;
+  background-color: #fafafa;
+}
+
+.item:hover {
+  background-color: #ffdc4e !important;
+}
+
+.dark {
+  background-color: #f3f3f3;
+}
+/*# sourceMappingURL=SideList.module.css.map */
