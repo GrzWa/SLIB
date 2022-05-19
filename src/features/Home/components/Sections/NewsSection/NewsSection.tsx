@@ -6,7 +6,7 @@ export const NewsSection = ({ data }) => {
   return (
     <>
       <CheckeredBackground />
-      <Title title={`Aktualności`} alignment={`center`} />
+      <Title>Aktualności</Title>
       <NewsGrid data={data} />
     </>
   );

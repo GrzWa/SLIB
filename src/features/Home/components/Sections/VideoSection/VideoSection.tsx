@@ -11,7 +11,9 @@ export const VideoSection = ({
   return (
     <div className={styles[`main-container`]}>
       <div className={styles.background} />
-      <Title title="Nasze wideo" text="white" underline="dark" />
+      <Title text="white" underline="dark">
+        Nasze wideo
+      </Title>
       <Container>
         <Row>
           <Col md={8} sm={12}>

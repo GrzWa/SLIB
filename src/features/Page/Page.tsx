@@ -14,7 +14,7 @@ export const Page = ({ data: { title, main, side, backButton } }) => {
           <Image src={arrow_left} />
           {backButton.label}
         </div>
-        <Title title={title} alignment="left" />
+        <Title alignment="left">{title}</Title>
         <Row>
           <Col sm={8}>{main}</Col>
           <Col sm={4}>{side}</Col>

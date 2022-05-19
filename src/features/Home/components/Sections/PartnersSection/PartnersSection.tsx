@@ -8,7 +8,7 @@ export const PartnersSection = ({
 }) => {
   return (
     <>
-      <Title title="Partnerzy" />
+      <Title>Partnerzy</Title>
       <div className={styles.container}>
         <Col className={styles.col}>
           <Image src={image1} alt="sponsor" />

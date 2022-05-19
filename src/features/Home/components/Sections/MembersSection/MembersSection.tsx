@@ -14,7 +14,7 @@ export const MembersSection = ({
 }) => {
   return (
     <>
-      <Title title="Nasi członkowie" />
+      <Title>Nasi członkowie</Title>
       <Container>
         <Row className={styles.row}>
           <MemberCard member={member1} />

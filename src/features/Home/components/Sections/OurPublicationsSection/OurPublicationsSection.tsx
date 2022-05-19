@@ -9,7 +9,7 @@ export const OurPublicationsSection = ({
 }) => {
   return (
     <>
-      <Title title={`Nasze publikacje`} alignment={`center`} />
+      <Title>Nasze publikacje</Title>
       <Container className={styles.container}>
         <Row>
           <Col lg={12} xl={6}>

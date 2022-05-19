@@ -4,7 +4,7 @@ import { RecommendedCards } from '@/components/RecommendedCards';
 export const RecommendedSection = ({ data }) => {
   return (
     <>
-      <Title title="Polecamy" />
+      <Title>Polecamy</Title>
       <RecommendedCards data={data} />
     </>
   );

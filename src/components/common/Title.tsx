@@ -3,14 +3,13 @@ import { FC } from 'react';
 import styles from './Title.module.css';
 
 interface Props {
-  title: string;
   text?: 'black' | 'white' | 'thin';
   underline?: 'yellow' | 'dark' | 'grey';
   alignment?: 'center' | 'left';
 }
 
 export const Title: FC<Props> = ({
-  title,
+  children,
   text = `black`,
   underline = `yellow`,
   alignment = `center`,
@@ -30,7 +29,7 @@ export const Title: FC<Props> = ({
   return (
     <>
       <div className={cls}>
-        <span>{title}</span>
+        <span>{children}</span>
       </div>
     </>
   );

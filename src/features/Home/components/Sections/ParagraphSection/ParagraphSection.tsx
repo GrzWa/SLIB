@@ -7,7 +7,7 @@ import styles from './ParagraphSection.module.css';
 export const ParagraphSection = ({ data: { text1, text2 } }) => {
   return (
     <>
-      <Title title="Zmień paragraf" />
+      <Title>Zmień paragraf</Title>
       <Container className={styles.container}>
         <div className={styles.background} />
         <Row className={styles.row}>

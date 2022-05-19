@@ -15,7 +15,7 @@ export const OurValuesSection = ({
   return (
     <div className={styles.section}>
       <div className={styles.background} />
-      <Title title={`Nasze wartości`} alignment={`center`} />
+      <Title>Nasze wartości</Title>
 
       <Container className={styles.container}>
         <Row className={styles[`row-lg`]}>

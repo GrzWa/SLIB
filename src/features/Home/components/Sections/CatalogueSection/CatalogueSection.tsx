@@ -4,10 +4,9 @@ import { CatalogueGrid } from '@/components/Layout/components/CatalogueGrid/Cata
 export const CatalogueSection = ({ data }) => {
   return (
     <>
-      <Title
-        title={`Katalog wiedzy na temat libertarianizmu`}
-        alignment={`center`}
-      />
+      <Title alignment={`center`}>
+        Katalog wiedzy na temat libertarianizmu
+      </Title>
       <CatalogueGrid data={data} />
     </>
   );

@@ -4,7 +4,7 @@ import { EventsGrid } from '@/components/Layout/components/EventsGrid';
 export const EventsSection = ({ data }) => {
   return (
     <>
-      <Title title="Nadchodzące wydarzenia" alignment="center" />
+      <Title alignment="center">Nadchodzące wydarzenia</Title>
       <EventsGrid data={data} />
     </>
   );
