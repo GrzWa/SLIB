@@ -3,26 +3,41 @@ import styles from './NewsCard.module.css';
 import calendar from '@/public/images/logo/calendar.svg';
 import person_icon from '@/public/images/logo/person_icon.svg';
 import { Button } from '@/components/Button';
+import clsx from 'clsx';
+import { FC } from 'react';
+import { Col, Row } from 'react-bootstrap';
+interface Props {
+  variant?: 'vertical' | 'horizontal' | 'compact';
+}
 
-export const NewsCard = ({ data }) => {
+export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
   const { image, date, author, title, subtitle, buttons } = data;
 
-  return (
-    <div className={styles.card}>
+  const clsImage = clsx([
+    variant === `vertical` && styles[`image-narrow`],
+    // variant === `horizontal` && styles[`image-full`],
+    variant === `compact` && styles.square,
+  ]);
+
+  const clsContent = clsx([
+    styles.content,
+    variant === `compact` && styles.square,
+  ]);
+
+  const imageJSX = (
+    <>
       {image ? (
-        <div className={title && !author ? styles.square : styles.image}>
+        <div className={clsImage}>
           <Image src={image} alt="" />
         </div>
       ) : null}
+    </>
+  );
 
+  const contentJSX = (
+    <>
       {title ? (
-        <div
-          className={
-            image && !author
-              ? `${styles.content} ${styles.square}`
-              : styles.content
-          }
-        >
+        <div className={clsContent}>
           {date ? (
             <p className={styles.data}>
               <Image src={calendar} alt="kalendarz" />
@@ -52,6 +67,28 @@ export const NewsCard = ({ data }) => {
           </div>
         </div>
       ) : null}
+    </>
+  );
+
+  return (
+    <div className={styles.card}>
+      {variant === `horizontal` ? (
+        <>
+          <Row>
+            <Col sm={6} className={styles.col}>
+              {contentJSX}
+            </Col>
+            <Col sm={6} className={styles.col}>
+              {imageJSX}
+            </Col>
+          </Row>
+        </>
+      ) : (
+        <>
+          {imageJSX}
+          {contentJSX}
+        </>
+      )}
     </div>
   );
 };

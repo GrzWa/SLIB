@@ -5,10 +5,17 @@
           box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.1);
 }
 
+.card .col {
+  padding: 0;
+}
+
 .card .content {
   background-color: white;
   padding: 8%;
   aspect-ratio: 17 / 11;
+  max-height: 25em;
+  min-height: 20em;
+  max-width: 100%;
 }
 
 .card .content .data {
@@ -44,6 +51,21 @@
 }
 
 .card .square {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1 !important;
+  max-height: 100em;
+  min-height: 0em;
+  font-size: 0.8em;
+}
+
+.card .image-narrow {
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .image-narrow > * {
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 /*# sourceMappingURL=NewsCard.module.css.map */

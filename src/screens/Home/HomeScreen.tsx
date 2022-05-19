@@ -59,6 +59,7 @@ const data = {
   },
   newsSection: {
     card1: {
+      image: hoppe,
       date: `27 stycznia 2021`,
       author: `Konto Administracyjne`,
       title: `Hans-Hermann Hoppe o lockdownach`,
@@ -74,7 +75,7 @@ const data = {
         { variant: `black`, link: ``, label: `Polski` },
       ],
     },
-    card2: { image: hoppe },
+    // card2: { image: hoppe },
     card3: {
       image: img3,
       date: `27 stycznia 2021`,

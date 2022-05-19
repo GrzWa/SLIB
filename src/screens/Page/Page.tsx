@@ -64,7 +64,7 @@ export const Page = () => {
   const main = (
     <>
       <NewsCard data={cards.card1} />
-      <NewsCard data={cards.card2} />
+      <NewsCard data={cards.card2} variant="compact" />
     </>
   );
 
@@ -92,7 +92,12 @@ export const Page = () => {
   const side = <SideBar data={sideBarData} />;
 
   //------------------------- WHOLE DATA -------------------------
-  const data = { title: `This is a generic page`, main: main, side: side };
+  const data = {
+    title: `This is a generic page`,
+    main: main,
+    side: side,
+    backButton: { link: ``, label: `Wróć do katalogu` },
+  };
 
   return (
     <>

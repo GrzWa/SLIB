@@ -9,7 +9,7 @@ export const SideBar = ({ data: { title, list } }) => {
         underline={title.underline}
         text={title.text}
       />
-      <SideList data={list}/>
+      <SideList data={list} />
     </>
   );
 };

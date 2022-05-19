@@ -19,25 +19,22 @@ export const NewsGrid = ({
       <div className={styles.background}></div>
       <div className="container">
         <Row className={styles.center}>
-          <Col lg={6} md={12} className={styles[`col-big`]}>
-            <NewsCard data={card1} />
-          </Col>
-          <Col lg={6} md={12} className={styles[`col-big`]}>
-            <NewsCard data={card2} />
-          </Col>
+          {/* <Col sm={12} className={styles[`col-big`]}> */}
+          <NewsCard data={card1} variant="horizontal" />
+          {/* </Col> */}
         </Row>
         <Row>
           <Col md={3} sm={6}>
-            <NewsCard data={card3} />
+            <NewsCard data={card3} variant="compact" />
           </Col>
           <Col md={3} sm={6}>
-            <NewsCard data={card4} />
+            <NewsCard data={card4} variant="compact" />
           </Col>
           <Col md={3} sm={6}>
-            <NewsCard data={card5} />
+            <NewsCard data={card5} variant="compact" />
           </Col>
           <Col md={3} sm={6}>
-            <NewsCard data={card6} />
+            <NewsCard data={card6} variant="compact" />
           </Col>
         </Row>
       </div>
