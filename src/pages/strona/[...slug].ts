@@ -1,1 +1,1 @@
-export { Page as default } from '@/screens/Page';
+export { Page as default } from '@/screens/News';

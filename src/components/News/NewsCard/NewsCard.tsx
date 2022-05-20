@@ -15,7 +15,6 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
 
   const clsImage = clsx([
     variant === `vertical` && styles[`image-narrow`],
-    // variant === `horizontal` && styles[`image-full`],
     variant === `compact` && styles.square,
   ]);
 

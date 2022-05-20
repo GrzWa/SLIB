@@ -6,7 +6,7 @@ import img3 from '@/public/images/news/img3.png';
 import img4 from '@/public/images/news/img4.png';
 import img5 from '@/public/images/news/img5.png';
 
-export const Page = () => {
+export const News = () => {
   //------------------------- MAIN DATA -------------------------
   const cards = {
     card1: {
@@ -64,7 +64,7 @@ export const Page = () => {
   const main = (
     <>
       <NewsCard data={cards.card1} />
-      <NewsCard data={cards.card2} variant="compact" />
+      <NewsCard data={cards.card2} />
     </>
   );
 

@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  background-color: #fff;
+}
+
+.container .shadow {
+  position: absolute;
+  width: 100%;
+  height: 50em;
+  -webkit-box-shadow: 0 -8px 8px rgba(100, 100, 100, 0.2);
+          box-shadow: 0 -8px 8px rgba(100, 100, 100, 0.2);
+}
+
+.container p {
+  text-align: justify;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.container .person {
+  text-align: justify;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  font-weight: 300;
+}
+
+.container .person span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=Catalogue.module.css.map */

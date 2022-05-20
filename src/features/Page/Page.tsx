@@ -11,7 +11,6 @@ import Image from 'next/image';
 export const Page = ({
   data: { title, date, author, main, side, backButton },
 }) => {
-  console.log(side);
   return (
     <Layout>
       <div className={styles.container}>
