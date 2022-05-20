@@ -70,7 +70,11 @@ export const Page = () => {
 
   //------------------------- SIDE DATA -------------------------
   const sideBarData = {
-    title: { title: `KATEGORIE POSTÓW`, underline: `grey`, text: `thin` },
+    title: {
+      title: `KATEGORIE POSTÓW`,
+      underline: `grey`,
+      text: `thin`,
+    },
     list: {
       type: `numbered`,
       items: [
@@ -93,7 +97,9 @@ export const Page = () => {
 
   //------------------------- WHOLE DATA -------------------------
   const data = {
-    title: `This is a generic page`,
+    title: `This is a generic page with a very long title that should span at least two lines`,
+    date: `27 stycznia 2021`,
+    author: `Pan Mateusz`,
     main: main,
     side: side,
     backButton: { link: ``, label: `Wróć do katalogu` },

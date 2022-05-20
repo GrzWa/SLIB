@@ -4,11 +4,9 @@ import { SideList } from './SideList';
 export const SideBar = ({ data: { title, list } }) => {
   return (
     <>
-      <Title
-        title={title.title}
-        underline={title.underline}
-        text={title.text}
-      />
+      <Title underline={title.underline} text={title.text}>
+        {title.title}
+      </Title>
       <SideList data={list} />
     </>
   );

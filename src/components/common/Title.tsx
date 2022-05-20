@@ -6,6 +6,7 @@ interface Props {
   text?: 'black' | 'white' | 'thin';
   underline?: 'yellow' | 'dark' | 'grey';
   alignment?: 'center' | 'left';
+  padding?: 'reduced';
 }
 
 export const Title: FC<Props> = ({
@@ -13,6 +14,7 @@ export const Title: FC<Props> = ({
   text = `black`,
   underline = `yellow`,
   alignment = `center`,
+  padding = ``,
 }) => {
   const cls = clsx(
     styles.title,
@@ -24,6 +26,7 @@ export const Title: FC<Props> = ({
     underline === `grey` && styles[`u-grey`],
     alignment === `center` && styles.center,
     alignment === `left` && styles.left,
+    padding === `reduced` && styles.reduced,
   );
 
   return (

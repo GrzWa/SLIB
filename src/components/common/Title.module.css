@@ -9,6 +9,10 @@ div.title span {
   padding: 0.1em 0.3em;
 }
 
+.reduced {
+  padding: 0.5em 0 !important;
+}
+
 .t-black {
   color: #000;
 }
