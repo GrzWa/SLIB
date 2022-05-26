@@ -11,16 +11,23 @@
           box-shadow: 0 -8px 8px rgba(100, 100, 100, 0.2);
 }
 
-.container p {
+.container .paragraph {
   text-align: justify;
   max-width: 40em;
   margin: 0 auto;
+  font-weight: 300;
+}
+
+.container .paragraph strong {
+  font-weight: 600;
+}
+
+.container .paragraph em {
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 .container .person {
-  text-align: justify;
-  max-width: 40em;
-  margin: 0 auto;
   padding: 0.5em 0;
   font-weight: 300;
 }

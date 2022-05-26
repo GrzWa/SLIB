@@ -13,13 +13,16 @@ export const Catalogue = ({
         <div className={styles.container}>
           <div className={styles.shadow}></div>
           <Title>{title}</Title>
-          <p>{subtitle}</p>
+          <div className={styles.paragraph}>{subtitle}</div>
           <Title>Forma</Title>
-          <p>{s2}</p>
+          <div className={styles.paragraph}>{s2}</div>
           <CatalogueGrid data={cards} />
           <Title>Zespół twórców</Title>
           {creators?.map((creator) => (
-            <div key={creator.per} className={styles.person}>
+            <div
+              key={creator.per}
+              className={`${styles.person} ${styles.paragraph}`}
+            >
               <span>{creator.name}</span>
               {creator.title ? ` ${creator.title}` : null} - {creator.des}
             </div>

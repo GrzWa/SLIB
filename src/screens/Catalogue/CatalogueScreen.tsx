@@ -3,18 +3,55 @@ import { Catalogue } from '@/features/Catalogue';
 export const CatalogueScreen = () => {
   const data = {
     title: `Katalog wiedzy na temat libertarianizmu`,
-    subtitle: `Z dumą prezentujemy przygotowany przez Stowarzyszenie Libertariańskie we współpracy z Fundacją Wolności i Przedsiębiorczości oraz Instytutem Misesa Katalog wiedzy na temat libertarianizmu.
-
-  Myślą, jaka stała za stworzeniem tej bazy wiedzy, było m.in.:
-  
-  Stworzenie źródła wiedzy dla osób początkujących, zaczynających swoją przygodę z libertarianizmem – dla tych osób dedykowane są materiały oznaczone jako poziom podstawowy,
-  
-  Bardziej szczegółowe opracowanie tematów, które posłużą osobom już zaznajomionym z ideą wolności do pogłębienia swojej wiedzy w konkretnych tematach. Dla nich przewidzieliśmy zawartość oznaczoną jako poziom zaawansowany oraz materiały dodatkowe,
-  
-  Przygotowanie materiałów, które będą mogły zostać wykorzystane podczas prelekcji na spotkaniach lokalnych kół i oddziałów Stowarzyszenia Libertariańskiego`,
-    s2: `Należy optymistycznie zauważyć, że w ostatnich latach mieliśmy do czynienia ze wzrostem zainteresowania ideą libertariańską, co przełożyło się na większą dostępność tekstów w języku polskim, traktujących o rozmaitych jego aspektach. Zdecydowaliśmy się nie tworzyć całego kursu od początku, co przy założonym przez nas stopniu szczegółowości zajęłoby kilka tomów i pochłonęło znacznie więcej zasobów niż obecnie posiadamy. Postawiliśmy na zebranie, usystematyzowanie i opatrzenie komentarzem już dostępnych tekstów tak, by umożliwić do nich dostęp szerszej publiczności.
-
-  Lista tematów dostępnych tematów (14) razem z planowanymi dodatkowymi rozdziałami (zaznaczone gwiazdką):`,
+    subtitle: (
+      <>
+        Z dumą prezentujemy przygotowany przez{` `}
+        <strong>Stowarzyszenie Libertariańskie</strong> we współpracy z{` `}
+        <em>Fundacją Wolności i Przedsiębiorczości</em> oraz{` `}
+        <em>Instytutem Misesa</em> Katalog wiedzy na temat libertarianizmu.
+        <br />
+        <br />
+        Myślą, jaka stała za stworzeniem tej bazy wiedzy, było m.in.:
+        <br />
+        <br />
+        Stworzenie źródła wiedzy dla osób początkujących, zaczynających swoją
+        przygodę z libertarianizmem – dla tych osób dedykowane są materiały
+        oznaczone jako <strong>poziom podstawowy</strong>,
+        <br />
+        <br />
+        Bardziej szczegółowe opracowanie tematów, które posłużą osobom już
+        zaznajomionym z ideą wolności do pogłębienia swojej wiedzy w konkretnych
+        tematach. Dla nich przewidzieliśmy zawartość oznaczoną jako{` `}
+        <strong>poziom zaawansowany</strong> oraz{` `}
+        <strong>materiały dodatkowe</strong>,
+        <br />
+        <br />
+        Przygotowanie materiałów, które będą mogły zostać wykorzystane podczas
+        prelekcji na spotkaniach lokalnych kół i oddziałów Stowarzyszenia
+        Libertariańskiego
+      </>
+    ),
+    s2: (
+      <>
+        Należy optymistycznie zauważyć, że w ostatnich latach mieliśmy do
+        czynienia ze wzrostem zainteresowania ideą libertariańską, co przełożyło
+        się na większą dostępność tekstów w języku polskim, traktujących o
+        rozmaitych jego aspektach. Zdecydowaliśmy się nie tworzyć całego kursu
+        od początku, co przy założonym przez nas stopniu szczegółowości zajęłoby
+        kilka tomów i pochłonęło znacznie więcej zasobów niż obecnie posiadamy.
+        {` `}
+        <strong>
+          Postawiliśmy na zebranie, usystematyzowanie i opatrzenie komentarzem
+          już dostępnych tekstów
+        </strong>
+        {` `}
+        tak, by umożliwić do nich dostęp szerszej publiczności.
+        <br />
+        <br />
+        Lista tematów dostępnych tematów (14) razem z planowanymi dodatkowymi
+        rozdziałami (zaznaczone gwiazdką):
+      </>
+    ),
     creators: [
       {
         name: `Marcin Chmielowski `,
