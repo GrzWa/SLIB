@@ -1,0 +1,95 @@
+.row {
+  height: 50em;
+}
+
+.text-container {
+  padding: 4em;
+  height: inherit;
+  position: relative;
+}
+
+.text-container .title {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.text-container .subtitle {
+  font-size: 2em;
+  padding-bottom: 1.5em;
+}
+
+.text-container .author {
+  padding-bottom: 1.5em;
+}
+
+.text-container .abstract {
+  font-weight: 300;
+}
+
+.text-container .button {
+  position: absolute;
+  bottom: 5em;
+}
+
+.image-container {
+  position: relative;
+  height: inherit;
+  padding: 0;
+}
+
+.image-container .background-odd {
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 50vw;
+  right: 0;
+}
+
+.image-container .background-even {
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 50vw;
+  right: left;
+}
+
+.image-container .image-odd {
+  position: relative;
+  height: inherit;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.image-container .image-odd > * {
+  position: absolute !important;
+  right: 0;
+}
+
+.image-container .image-odd img {
+  height: 40em !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.image-container .image-even {
+  position: relative;
+  height: inherit;
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 2em;
+  width: inherit;
+}
+
+.image-container .image-even > * {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*# sourceMappingURL=PublicationGrid.module.css.map */

@@ -1,0 +1,96 @@
+.row {
+    height: 50em;
+    // margin-bottom: 5em;
+    // background-color: rgba(255,0,0,0.1);
+}
+
+.text-container {
+    padding: 4em;
+    height: inherit;
+    position: relative;
+
+    .title {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .subtitle {
+        font-size: 2em;
+        padding-bottom: 1.5em;
+    }
+
+    .author {
+        padding-bottom: 1.5em;
+
+    }
+
+    .abstract {
+        font-weight: 300;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 5em;
+    }
+}
+
+.image-container {
+    position: relative;
+    height: inherit;
+    padding: 0;
+
+    .background-odd {
+        position: absolute;
+        background-color: #f4f4f4;
+        height: 100%;
+        width: 50vw;
+        right: 0;
+    }
+
+    .background-even {
+        position: absolute;
+        background-color: #f4f4f4;
+        height: 100%;
+        width: 50vw;
+        right: left;
+    }
+
+    .image-odd {
+        position: relative;
+        height: inherit;
+        margin-left: auto;
+        margin-right: 0;
+        padding-top: 5em;
+        padding-bottom: 5em;
+
+        > * {
+            position: absolute !important;
+            right: 0;
+        }
+            
+        img {
+            height: 40em !important;
+            // position: absolute;
+            object-fit: contain !important;
+            margin-left: auto;
+            margin-right: 0;
+            // top: 50%;
+            // transform: translateY(-50%);
+        }
+    }
+
+    .image-even {
+        position: relative;
+        height: inherit;
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 2em;
+        width: inherit;
+        > * {
+            position: absolute;
+            object-fit: contain;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
