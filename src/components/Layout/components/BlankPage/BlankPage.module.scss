@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    background-color: white;
+    padding-bottom: 4em;
+    z-index: -10;
+
+    .shadow {
+        width: 100%;
+        position: absolute;
+        height: 50em;
+        box-shadow: 0 -5px 8px rgba(0,0,0,0.2);
+    }
+}
