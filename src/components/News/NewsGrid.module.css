@@ -16,16 +16,15 @@
   z-index: -100;
 }
 
-.section .center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.row {
+  margin-bottom: 1.5em;
 }
 
-.section .center .col-big {
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
+.col-large {
+  padding: 0;
+}
+
+.col-small {
+  padding-bottom: 1.5em;
 }
 /*# sourceMappingURL=NewsGrid.module.css.map */

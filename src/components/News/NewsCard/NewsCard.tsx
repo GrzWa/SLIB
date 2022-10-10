@@ -5,18 +5,21 @@ import person_icon from '@/public/images/logo/person_icon.svg';
 import { Button } from '@/components/Button';
 import clsx from 'clsx';
 import { FC } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 interface Props {
+  data: any;
   variant?: 'vertical' | 'horizontal' | 'compact';
 }
 
 export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
   const { image, date, author, title, subtitle, buttons } = data;
 
-  const clsImage = clsx([
+  const clsImageContainer = clsx([
     variant === `vertical` && styles[`image-narrow`],
     variant === `compact` && styles.square,
   ]);
+
+  const clsImage = clsx([variant === `compact` && styles[`image-fit`]]);
 
   const clsContent = clsx([
     styles.content,
@@ -26,9 +29,13 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
   const imageJSX = (
     <>
       {image ? (
-        <div className={clsImage}>
-          <Image src={image} alt="" />
-        </div>
+        <Image
+          src={image}
+          alt=""
+          className={clsImage}
+          layout="fill"
+          objectFit="contain"
+        />
       ) : null}
     </>
   );
@@ -38,7 +45,7 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
       {title ? (
         <div className={clsContent}>
           {date ? (
-            <p className={styles.data}>
+            <p className={styles.date}>
               <Image src={calendar} alt="kalendarz" />
               {` `}
               {date}
@@ -55,10 +62,15 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
 
           {title ? <div className={styles.title}>{title}</div> : null}
 
-          {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
+          {subtitle ? (
+            <p className={styles.subtitle}>
+              <div className={styles.shadow}></div>
+              {subtitle}
+            </p>
+          ) : null}
 
           <div className={styles.buttons}>
-            {buttons?.map((button) => (
+            {buttons?.map((button: any) => (
               <Button variant={button.variant} key={button.label}>
                 {button.label}
               </Button>
@@ -70,24 +82,30 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
   );
 
   return (
-    <div className={styles.card}>
+    <>
       {variant === `horizontal` ? (
-        <>
-          <Row>
-            <Col sm={6} className={styles.col}>
+        <div className="container-fluid">
+          <Row className={styles.card}>
+            <Col md={12} lg={6} className={styles.col}>
               {contentJSX}
             </Col>
-            <Col sm={6} className={styles.col}>
-              {imageJSX}
+            <Col md={6} className={styles.col}>
+              <Image
+                src={image}
+                alt=""
+                className={clsImage}
+                layout="fill"
+                objectFit="cover"
+              />
             </Col>
           </Row>
-        </>
+        </div>
       ) : (
-        <>
-          {imageJSX}
+        <div className={styles.card}>
+          <div className={clsImageContainer}>{imageJSX}</div>
           {contentJSX}
-        </>
+        </div>
       )}
-    </div>
+    </>
   );
 };

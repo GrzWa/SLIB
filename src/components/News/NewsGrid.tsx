@@ -1,43 +1,36 @@
 import styles from './NewsGrid.module.css';
-import hoppe from '../../../public/images/news/hoppe.png';
-import img3 from '../../../public/images/news/img3.png';
-import img4 from '../../../public/images/news/img4.png';
-import img5 from '../../../public/images/news/img5.png';
-import img6 from '../../../public/images/news/img6.png';
-import czytaj from '../../../public/images/news/czytaj.png';
-import calendar from '../../../public/images/logo/calendar.svg';
-import person_icon from '../../../public/images/logo/person_icon.svg';
-import Image from 'next/image';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { NewsCard } from './NewsCard';
+import { FC } from 'react';
+interface Props {
+  data: any;
+}
 
-export const NewsGrid = ({
-  data: { card1, card2, card3, card4, card5, card6 },
-}) => {
+export const NewsGrid: FC<Props> = ({ data }) => {
+  const { card1, card2, card3, card4, card5, card6 } = data;
   return (
     <div className={styles.section}>
       <div className={styles.background}></div>
-      <div className="container">
-        <Row className={styles.center}>
-          {/* <Col sm={12} className={styles[`col-big`]}> */}
+
+      <Row className={styles.row}>
+        <Col md={12} lg={12} className={styles[`col-large`]}>
           <NewsCard data={card1} variant="horizontal" />
-          {/* </Col> */}
-        </Row>
-        <Row>
-          <Col md={3} sm={6}>
-            <NewsCard data={card3} variant="compact" />
-          </Col>
-          <Col md={3} sm={6}>
-            <NewsCard data={card4} variant="compact" />
-          </Col>
-          <Col md={3} sm={6}>
-            <NewsCard data={card5} variant="compact" />
-          </Col>
-          <Col md={3} sm={6}>
-            <NewsCard data={card6} variant="compact" />
-          </Col>
-        </Row>
-      </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={3} md={6} className={styles[`col-small`]}>
+          <NewsCard data={card3} variant="compact" />
+        </Col>
+        <Col lg={3} md={6} className={styles[`col-small`]}>
+          <NewsCard data={card4} variant="compact" />
+        </Col>
+        <Col lg={3} md={6} className={styles[`col-small`]}>
+          <NewsCard data={card5} variant="compact" />
+        </Col>
+        <Col lg={3} md={6} className={styles[`col-small`]}>
+          <NewsCard data={card6} variant="compact" />
+        </Col>
+      </Row>
     </div>
   );
 };
