@@ -1,5 +1,4 @@
-import { Col, Container, Nav, Row } from 'react-bootstrap';
-import { MenuItem } from './MenuItem';
+import { Nav } from 'react-bootstrap';
 import styles from './MenuItems.module.css';
 
 export const MenuItems = ({ data }: any) => {
