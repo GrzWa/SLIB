@@ -3,7 +3,7 @@
 
     .background {
         position: absolute;
-        width: 100vw;
+        width: calc(100vw - var(--scrollbarWidth));
         overflow: hidden;
         height: 100%;
         margin: auto;

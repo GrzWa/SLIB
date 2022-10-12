@@ -20,7 +20,7 @@
 
     .content {
       background-color: white;
-      padding: 2.5rem;
+      padding: 5%;
       width: 100%;
       aspect-ratio: 17 / 11;
       display: flex;
@@ -35,12 +35,10 @@
       .title {
         font-size: 1.2em;
         font-weight: 600;
-        padding: 1em 0;
+        padding: 3% 0;
       }
 
       .subtitle {
-        font-size: 0.8em;
-        // max-height: 35%;
         overflow: hidden;
         line-height: 200%;
         font-weight: 300;
@@ -51,14 +49,6 @@
         font-size: 0.8em;
         display: flex;
         gap: 1em;
-        // position: absolute;
-        // margin: auto 0;
-        // padding: auto 0;
-        // bottom: 4em;
-
-        // > * {
-        //     margin-right: 2em;
-        // }
       }
   }
 

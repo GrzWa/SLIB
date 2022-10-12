@@ -3,7 +3,7 @@
     // background-color: rgba(161, 36, 36, 0.195);
     .background {
         position: absolute;
-        width: 100vw;
+        width: calc(100vw - var(--scrollbarWidth));
         overflow: hidden;
         height: 100%;
         margin: auto;
@@ -23,8 +23,9 @@
             height: 36em;
             max-width: 120%;
             // background-color: rgba(0, 255, 51, 0.293);
-
-        .col-left {
+            
+            .col-left {
+            // background-color: rgba(255, 0, 51, 0.293);
             margin: 0;
             padding: 1.5em 0.5em 1.5em 0;
             height: 100%;
@@ -34,7 +35,6 @@
                 background-color: #FFDC4E;
                 height: 100%;
                 max-width: 85%;
-                // margin: 0.5em 1em;
 
                 .card-img {
                     width: 100%;
@@ -42,10 +42,8 @@
 
                 .card-content {
                     position: relative;
-                    // height: 50%;
                     
                     .card-text {
-                        // position: absolute;
                         margin: auto;
                         padding: 1em 2em;
                         font-weight: 300;
@@ -54,9 +52,6 @@
                     }
 
                     .card-name {
-                        // position: absolute;
-                        // bottom: 1em;
-                        // right: 1em;
                         font-weight: 600;
                         text-align: end;
                         padding: 1em;
@@ -94,9 +89,15 @@
                 // background-color: rgba(0, 255, 42, 0.19);
                 .col-left {
                     height: 38em;
+                    width: 30%;
+                    max-width: none;
+
+                    .card {
+                        width: 22em;
+                        margin: 0 auto;
+                    }
                 }
                 .col-right {
-                    // height: 100%;
                     .row-sm {
                         height: 50%;
                         .col {
@@ -109,4 +110,18 @@
 
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        .container {
+            .row-lg {
+                .col-left {
+                    height: 38em;
+                    width: 100%;
+                    max-width: none;
+                    }
+                    }
+                    }
+            }
 }

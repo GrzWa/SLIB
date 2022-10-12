@@ -1,21 +1,14 @@
 .container {
   position: relative;
+  width: 100%;
 }
 
 .container .checkered {
+  width: calc(100vw - var(--scrollbarWidth));
   position: absolute;
-  z-index: -10;
-  width: 100vw;
-  overflow: hidden;
-  margin: auto;
-  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-}
-
-@media (max-width: 768px) {
-  .container .checkered {
-    width: 200vw;
-  }
+  left: 50%;
+  z-index: -10;
 }
 /*# sourceMappingURL=CheckeredBackground.module.css.map */

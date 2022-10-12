@@ -5,7 +5,7 @@
 
 .main-container .background {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - var(--scrollbarWidth));
   overflow: hidden;
   height: 95%;
   margin: auto;

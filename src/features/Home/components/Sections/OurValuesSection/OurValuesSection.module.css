@@ -4,7 +4,7 @@
 
 .section .background {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - var(--scrollbarWidth));
   overflow: hidden;
   height: 100%;
   margin: auto;
@@ -86,12 +86,26 @@
   }
   .section .container .row-lg .col-left {
     height: 38em;
+    width: 30%;
+    max-width: none;
+  }
+  .section .container .row-lg .col-left .card {
+    width: 22em;
+    margin: 0 auto;
   }
   .section .container .row-lg .col-right .row-sm {
     height: 50%;
   }
   .section .container .row-lg .col-right .row-sm .col {
     height: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section .container .row-lg .col-left {
+    height: 38em;
+    width: 100%;
+    max-width: none;
   }
 }
 /*# sourceMappingURL=OurValuesSection.module.css.map */

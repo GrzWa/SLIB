@@ -1,12 +1,14 @@
 .main {
-    margin: 0 auto;
-    width: 90vw;
-    overflow: hidden;
+    margin: 0 20px;
+    width: calc(100% - 40px);
+    max-width: 150ch;
+    // overflow: hidden;
     // background-color: rgba(255, 100, 53, 0.2);
 }   
 
 @media (min-width: 768px) {
     .main {
+        margin: 0 auto;
         width: 78vw;
         overflow: visible;
     }

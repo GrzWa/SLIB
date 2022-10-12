@@ -5,7 +5,7 @@
 
 .section .background {
   position: absolute;
-  width: 100vw;
+  width: calc(100vw - var(--scrollbarWidth));
   height: 100%;
   overflow: hidden;
   background-color: #FAFAFA;

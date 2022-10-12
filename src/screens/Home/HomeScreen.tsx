@@ -45,6 +45,7 @@ import s5 from '@/public/images/sponsors/s5.png';
 import s6 from '@/public/images/sponsors/s6.png';
 import s7 from '@/public/images/sponsors/s7.png';
 import s8 from '@/public/images/sponsors/s8.png';
+import { useEffect, useState } from 'react';
 
 const data = {
   heroSection: {
@@ -264,6 +265,18 @@ const data = {
 };
 
 export const HomeScreen = () => {
+  const [scrollbarWidth, setScrollbarWidth] = useState<any>();
+
+  useEffect(() => {
+    setScrollbarWidth(window.innerWidth - document.body.clientWidth);
+    console.log(window.innerWidth - document.body.clientWidth);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.setProperty(`--scrollbarWidth`, `${scrollbarWidth}px`);
+    console.log(scrollbarWidth);
+  }, [scrollbarWidth]);
+
   return (
     <>
       <Home data={data} />
