@@ -26,6 +26,11 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
     variant === `compact` && styles.square,
   ]);
 
+  const clsCard = clsx([
+    styles.card,
+    variant === `vertical` && styles[`card-vertical`],
+  ]);
+
   const imageJSX = (
     <>
       {image ? (
@@ -69,7 +74,7 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
             </p>
           ) : null}
 
-          <div className={styles.buttons}>
+          <div className={styles.btns}>
             {buttons?.map((button: any) => (
               <Button variant={button.variant} key={button.label}>
                 {button.label}
@@ -101,7 +106,7 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
           </Row>
         </div>
       ) : (
-        <div className={styles.card}>
+        <div className={clsCard}>
           <div className={clsImageContainer}>{imageJSX}</div>
           {contentJSX}
         </div>

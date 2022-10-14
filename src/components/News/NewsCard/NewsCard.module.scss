@@ -20,7 +20,7 @@
 
     .content {
       background-color: white;
-      padding: 5%;
+      padding: 3% 5%;
       width: 100%;
       aspect-ratio: 17 / 11;
       display: flex;
@@ -29,13 +29,13 @@
       .date {
         color: #ABABAB;
         margin: 0;
-        font-size: 0.8em;
+        font-size: 0.6em;
       }
 
       .title {
         font-size: 1.2em;
         font-weight: 600;
-        padding: 3% 0;
+        padding: 1.5% 0;
       }
 
       .subtitle {
@@ -43,9 +43,10 @@
         line-height: 200%;
         font-weight: 300;
         flex: 1;
+        font-size: 0.8em;
       }
 
-      .buttons {
+      .btns {
         font-size: 0.8em;
         display: flex;
         gap: 1em;
@@ -61,16 +62,22 @@
     object-fit: fill;
   }
 
-  .image-narrow {
-    position: relative;
-  //   overflow: hidden;
-  //   object-fit: contain;
-    min-height: 10em;
-    object-fit: fill;
 
-  //   > * {
-  //     transform: translateY(-20%);
-  //   }
+
   }
 
+  .card-vertical {
+    box-shadow: none;
+    height: 40em;
+    margin-bottom: 2em;
+
+    .content {
+      height: 50%;
+      background-color: #fafafa;
+    }
+    .image-narrow {
+      position: relative;
+      height: 50%;
+      object-fit: fill;
+    }
   }
