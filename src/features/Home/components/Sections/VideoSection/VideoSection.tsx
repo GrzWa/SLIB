@@ -16,10 +16,10 @@ export const VideoSection = ({
       </Title>
       <Container>
         <Row>
-          <Col md={8} sm={12}>
+          <Col lg={8} md={6} sm={12}>
             <Image src={video.image} alt="wideo" />
           </Col>
-          <Col md={4} sm={12}>
+          <Col lg={4} md={6} sm={12}>
             <div className={styles.title}>{video.title}</div>
             <div className={styles.text}>{video.text}</div>
           </Col>

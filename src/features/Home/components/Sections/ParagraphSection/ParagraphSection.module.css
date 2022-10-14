@@ -41,4 +41,13 @@
 .container .row .right .content .paragraph span {
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .container .background {
+    width: calc(100vw - var(--scrollbarWidth));
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
 /*# sourceMappingURL=ParagraphSection.module.css.map */
