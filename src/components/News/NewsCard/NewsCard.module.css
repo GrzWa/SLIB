@@ -75,14 +75,9 @@
 }
 
 .card .image-narrow {
-  overflow: hidden;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: auto;
-}
-
-.card .image-narrow > * {
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  position: relative;
+  min-height: 10em;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 /*# sourceMappingURL=NewsCard.module.css.map */

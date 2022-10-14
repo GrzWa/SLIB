@@ -62,13 +62,15 @@
   }
 
   .image-narrow {
-    overflow: hidden;
-    object-fit: contain;
-    height: auto;
+    position: relative;
+  //   overflow: hidden;
+  //   object-fit: contain;
+    min-height: 10em;
+    object-fit: fill;
 
-    > * {
-      transform: translateY(-20%);
-    }
+  //   > * {
+  //     transform: translateY(-20%);
+  //   }
   }
 
   }

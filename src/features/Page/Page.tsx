@@ -16,7 +16,7 @@ export const Page = ({
       <div className={styles.container}>
         {backButton ? (
           <div className={styles[`back-button`]}>
-            <Image src={arrow_left} />
+            <Image src={arrow_left} alt="" />
             {backButton.label}
           </div>
         ) : null}

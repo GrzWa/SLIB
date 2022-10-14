@@ -34,7 +34,7 @@ export const NewsCard: FC<Props> = ({ data, variant = `vertical` }) => {
           alt=""
           className={clsImage}
           layout="fill"
-          objectFit="contain"
+          objectFit={variant === `vertical` ? `cover` : `contain`}
         />
       ) : null}
     </>
