@@ -6,8 +6,8 @@ import { SeeMore } from '@/components/SeeMore';
 export const EventsGrid = ({ data: { card1, card2, card3, card4 } }) => {
   return (
     <>
-      <Container className={styles.container}>
-        <Row className={styles.row}>
+      <Container>
+        <Row className="p-0 m-0">
           <Col sm={12} md={6} lg={4} xl={3} className={styles.col}>
             <EventsCard data={card1} />
           </Col>

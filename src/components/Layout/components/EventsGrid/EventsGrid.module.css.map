@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,GAAG;CAQf;;AATD,AAEI,UAFM,CAEN,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,CAAC;CAIZ;;AARL,AAKQ,UALE,CAEN,IAAI,CAGA,IAAI,CAAC;EACD,OAAO,EAAE,CAAC;CACb",
+    "mappings": "",
     "sources": [
         "EventsGrid.module.scss"
     ],
