@@ -1,13 +1,14 @@
 .row {
     height: 50em;
-    // margin-bottom: 5em;
-    // background-color: rgba(255,0,0,0.1);
+    display: flex;
 }
 
 .text-container {
-    padding: 4em;
+    padding: calc(min(4em, 5%));
     height: inherit;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     .title {
         font-size: 2em;
@@ -16,7 +17,7 @@
 
     .subtitle {
         font-size: 2em;
-        padding-bottom: 1.5em;
+        padding-bottom: calc(min(1.5em, 6%));
     }
 
     .author {
@@ -25,72 +26,138 @@
     }
 
     .abstract {
+        position: relative;
         font-weight: 300;
+        overflow: hidden;
+        min-height: 0;
+        flex: 1;
+        margin-bottom: 1em;
+        
+        .shadow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            box-shadow: inset 0px -25px 15px -15px #FFF;
+        }
     }
 
-    .button {
-        position: absolute;
-        bottom: 5em;
-    }
 }
 
 .image-container {
     position: relative;
-    height: inherit;
+    height: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    .background-odd {
+    .background {
         position: absolute;
         background-color: #f4f4f4;
         height: 100%;
         width: 50vw;
+    }
+
+    .background-odd {
         right: 0;
     }
 
-    .background-even {
-        position: absolute;
-        background-color: #f4f4f4;
-        height: 100%;
-        width: 50vw;
-        right: left;
+    .image {
+        position: relative;
+        height: 80%;
+        margin-inline: 2em;
+    }
+        
     }
 
-    .image-odd {
-        position: relative;
-        height: inherit;
-        margin-left: auto;
-        margin-right: 0;
-        padding-top: 5em;
-        padding-bottom: 5em;
-
-        > * {
-            position: absolute !important;
-            right: 0;
+@media (max-width: 576px) {
+    .row-odd {
+        flex-direction: column-reverse;
+    }
+    
+    .text-container {
+    //     padding: calc(min(4em, 5%));
+    //     height: inherit;
+    //     display: flex;
+    //     flex-direction: column;
+    height: 70%;
+    // background-color: rgba(255, 0, 0, 0.1);
+    
+    .button {
+        text-align: center;
+        }
+    
+    // .title {
+        // text-align: start;
+//         font-size: 2em;
+//         font-weight: 600;
+    // }
+    
+    // .subtitle {
+//         font-size: 2em;
+//         padding-bottom: calc(min(1.5em, 6%));
+//     }
+    
+    //     .author {
+    //         padding-bottom: 1.5em;
+    
+    //     }
+    
+    //     .abstract {
+    //         position: relative;
+    //         font-weight: 300;
+    //         overflow: hidden;
+    //         min-height: 0;
+    //         flex: 1;
+    //         margin-bottom: 1em;
+            
+    //         .shadow {
+    //             position: absolute;
+    //             left: 0;
+    //             top: 0;
+    //             height: 100%;
+    //             width: 100%;
+    //             box-shadow: inset 0px -25px 15px -15px #FFF;
+    //         }
+    //     }
+    
+    }
+    
+    .image-container {
+        // background-color: rgba(0, 255, 0, 0.1);
+    //     position: relative;
+        height: 30%;
+        // display: none;
+    //     padding: 0;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    
+        .background {
+        //     position: absolute;
+        //     background-color: #f4f4f4;
+            // height: 100%;
+            width: calc(100vw - var(--scrollbarWidth));
+        }
+        .image {
+            > * {
+                > * {
+                    object-position: center !important;
+                }
+            }
+        }
+    
+        // .background-odd {
+        //     right: 0;
+        // }
+    
+        .image {
+        //     position: relative;
+            height: 100%;
+        //     margin-inline: 2em;
         }
             
-        img {
-            height: 40em !important;
-            // position: absolute;
-            object-fit: contain !important;
-            margin-left: auto;
-            margin-right: 0;
-            // top: 50%;
-            // transform: translateY(-50%);
         }
-    }
-
-    .image-even {
-        position: relative;
-        height: inherit;
-        margin-left: 0;
-        margin-right: auto;
-        padding-left: 2em;
-        width: inherit;
-        > * {
-            position: absolute;
-            object-fit: contain;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
 }

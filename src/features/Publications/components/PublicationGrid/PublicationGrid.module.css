@@ -1,11 +1,21 @@
 .row {
   height: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .text-container {
-  padding: 4em;
+  padding: calc(min(4em, 5%));
   height: inherit;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .text-container .title {
@@ -15,7 +25,7 @@
 
 .text-container .subtitle {
   font-size: 2em;
-  padding-bottom: 1.5em;
+  padding-bottom: calc(min(1.5em, 6%));
 }
 
 .text-container .author {
@@ -23,73 +33,84 @@
 }
 
 .text-container .abstract {
+  position: relative;
   font-weight: 300;
+  overflow: hidden;
+  min-height: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 1em;
 }
 
-.text-container .button {
+.text-container .abstract .shadow {
   position: absolute;
-  bottom: 5em;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: inset 0px -25px 15px -15px #FFF;
+          box-shadow: inset 0px -25px 15px -15px #FFF;
 }
 
 .image-container {
   position: relative;
-  height: inherit;
+  height: 100%;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-container .background {
+  position: absolute;
+  background-color: #f4f4f4;
+  height: 100%;
+  width: 50vw;
 }
 
 .image-container .background-odd {
-  position: absolute;
-  background-color: #f4f4f4;
-  height: 100%;
-  width: 50vw;
   right: 0;
 }
 
-.image-container .background-even {
-  position: absolute;
-  background-color: #f4f4f4;
-  height: 100%;
-  width: 50vw;
-  right: left;
-}
-
-.image-container .image-odd {
+.image-container .image {
   position: relative;
-  height: inherit;
-  margin-left: auto;
-  margin-right: 0;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  height: 80%;
+  margin-inline: 2em;
 }
 
-.image-container .image-odd > * {
-  position: absolute !important;
-  right: 0;
-}
-
-.image-container .image-odd img {
-  height: 40em !important;
-  -o-object-fit: contain !important;
-     object-fit: contain !important;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.image-container .image-even {
-  position: relative;
-  height: inherit;
-  margin-left: 0;
-  margin-right: auto;
-  padding-left: 2em;
-  width: inherit;
-}
-
-.image-container .image-even > * {
-  position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+@media (max-width: 576px) {
+  .row-odd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .text-container {
+    height: 70%;
+  }
+  .text-container .button {
+    text-align: center;
+  }
+  .image-container {
+    height: 30%;
+  }
+  .image-container .background {
+    width: calc(100vw - var(--scrollbarWidth));
+  }
+  .image-container .image > * > * {
+    -o-object-position: center !important;
+       object-position: center !important;
+  }
+  .image-container .image {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=PublicationGrid.module.css.map */
