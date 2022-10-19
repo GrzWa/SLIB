@@ -5,6 +5,7 @@ import { LogoSL } from '@/components/Icons';
 import { FooterColumn } from './FooterColumn';
 import FB from '@/public/images/icons/FB.svg';
 import TW from '@/public/images/icons/TW.svg';
+import clsx from 'clsx';
 
 export const Footer = () => {
   const col1 = { top: [`Aktualności`, `Kontakt`, `Dołącz!`] };
@@ -70,9 +71,11 @@ export const Footer = () => {
     ],
   };
 
+  const clsContainer = clsx([`container-fluid`, styles.container]);
+
   return (
     <>
-      <Container className={styles.container}>
+      <div className={clsContainer}>
         <Row>
           <Col className={styles.logo}>
             <LogoSL />
@@ -97,7 +100,7 @@ export const Footer = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </>
   );
 };

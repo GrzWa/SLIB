@@ -1,11 +1,13 @@
 .container {
     background-color: #f6f6f6;
     padding-top: 4em;
+    max-width: 100% !important;
+    margin: 0;
     
     .logo {
         height: 10em;
     }
-
+`
     .bottom {
         padding: 2em 0;
         background-color: #efefef;
